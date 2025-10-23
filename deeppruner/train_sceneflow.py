@@ -36,17 +36,13 @@ from models.config import config as config_args
 from setup_logging import setup_logging
 
 parser = argparse.ArgumentParser(description='DeepPruner')
-parser.add_argument('--datapath_monkaa', default='/',
-                    help='datapath for sceneflow monkaa dataset')
-parser.add_argument('--datapath_flying', default='/',
-                    help='datapath for sceneflow flying dataset')
-parser.add_argument('--datapath_driving', default='/',
-                    help='datapath for sceneflow driving dataset')
+parser.add_argument('--datapath', default='/home/liqi/Code/Scene_Flow_Datasets/',
+                    help='datapath for sceneflow dataset')
 parser.add_argument('--epochs', type=int, default=100,
                     help='number of epochs to train')
 parser.add_argument('--loadmodel', default=None,
                     help='load model')
-parser.add_argument('--save_dir', default='./',
+parser.add_argument('--save_dir', default='./result/',
                     help='save directory')
 parser.add_argument('--savemodel', default='./',
                     help='save model')
@@ -75,8 +71,7 @@ args.maxdisp = config_args.max_disp
 setup_logging(args.logging_filename)
 
 
-all_left_img, all_right_img, all_left_disp, test_left_img, test_right_img, test_left_disp = lt.dataloader(args.datapath_monkaa,
-args.datapath_flying, args.datapath_driving)
+all_left_img, all_right_img, all_left_disp, test_left_img, test_right_img, test_left_disp = lt.dataloader(args.datapath,)
 
 
 TrainImgLoader = torch.utils.data.DataLoader(

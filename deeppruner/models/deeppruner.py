@@ -27,18 +27,18 @@ from models.config import config as args
 class DeepPruner(SubModule):
     def __init__(self):
         super(DeepPruner, self).__init__()
-        self.scale = args.cost_aggregator_scale
-        self.max_disp = args.max_disp // self.scale
+        self.scale = args.cost_aggregator_scale #4  区分fast和best
+        self.max_disp = args.max_disp // self.scale #48
         self.mode = args.mode
 
         self.patch_match_args = args.patch_match_args
-        self.patch_match_sample_count = self.patch_match_args.sample_count
-        self.patch_match_iteration_count = self.patch_match_args.iteration_count
-        self.patch_match_propagation_filter_size = self.patch_match_args.propagation_filter_size
+        self.patch_match_sample_count = self.patch_match_args.sample_count #12
+        self.patch_match_iteration_count = self.patch_match_args.iteration_count #2 
+        self.patch_match_propagation_filter_size = self.patch_match_args.propagation_filter_size # 3
         
-        self.post_CRP_sample_count = args.post_CRP_sample_count
-        self.post_CRP_sampler_type = args.post_CRP_sampler_type
-        hourglass_inplanes = args.hourglass_inplanes
+        self.post_CRP_sample_count = args.post_CRP_sample_count #7
+        self.post_CRP_sampler_type = args.post_CRP_sampler_type #uniform
+        hourglass_inplanes = args.hourglass_inplanes # 16
 
         #   refinement input features are composed of:
         #                                       left image low level features +
@@ -51,7 +51,7 @@ class DeepPruner(SubModule):
         else:
             from models.feature_extractor_best import feature_extraction
 
-        refinement_inplanes = args.feature_extractor_refinement_level_outplanes + self.post_CRP_sample_count + 2 + 1
+        refinement_inplanes = args.feature_extractor_refinement_level_outplanes + self.post_CRP_sample_count + 2 + 1 # 42
         self.refinement_net = RefinementNet(refinement_inplanes)
 
         # cost_aggregator_inplanes are composed of:  
@@ -60,7 +60,7 @@ class DeepPruner(SubModule):
         #                            min_disparity + max_disparity + disparity_samples
 
         cost_aggregator_inplanes = 2 * (args.feature_extractor_ca_level_outplanes +
-                                        self.patch_match_sample_count + 2) + 1
+                                        self.patch_match_sample_count + 2) + 1 #93
         self.cost_aggregator = CostAggregator(cost_aggregator_inplanes, hourglass_inplanes)
 
         self.feature_extraction = feature_extraction()
@@ -158,13 +158,13 @@ class DeepPruner(SubModule):
             :disparity_samples:
         """
         if sampler_type is "patch_match":
-            disparity_samples = self.patch_match(left_input, right_input, min_disparity,
+            disparity_samples = self.patch_match(left_input, right_input, min_disparity, #论文中提到的patchmatch处理
                                                  max_disparity, sample_count, self.patch_match_iteration_count)
         else:
             disparity_samples = self.uniform_sampler(min_disparity, max_disparity, sample_count)
 
         disparity_samples = torch.cat((torch.floor(min_disparity), disparity_samples, torch.ceil(max_disparity)),
-                                      dim=1).long()
+                                      dim=1).long() #把上界，采样结果和下界叠在一起
         return disparity_samples
 
     def cost_volume_generator(self, left_input, right_input, disparity_samples):
@@ -209,14 +209,15 @@ class DeepPruner(SubModule):
             :max_disparity_features: features from ConfidenceRangePredictor-Max
         """
         # cost-volume bottleneck layers
-        cost_volume = self.dres0(cost_volume)
+        cost_volume = self.dres0(cost_volume) [1,32,14,64,128]
         cost_volume = self.dres1(cost_volume)
 
         min_disparity, min_disparity_features = self.min_disparity_predictor(cost_volume,
-                                                                             disparity_samples.squeeze(1))
-
+                                                                             disparity_samples.squeeze(1)) # 用了一些卷积，得到min_disparity[1,1,64,128] 预测的最小视差
+        #min_disparity_features [1,14,64,128] 每个视差级的聚合结果
         max_disparity, max_disparity_features = self.max_disparity_predictor(cost_volume,
                                                                              disparity_samples.squeeze(1))
+        #这部分主要是根据特征体对patchmatch预测的视差进行修正，得到最小视差和最大视差
 
         min_disparity = self.min_disparity_conv(min_disparity)
         max_disparity = self.max_disparity_conv(max_disparity)
@@ -248,16 +249,15 @@ class DeepPruner(SubModule):
         """
 
         if self.scale == 8:
-            left_spp_features, left_low_level_features, left_low_level_features_1 = self.feature_extraction(left_input)
-            right_spp_features, right_low_level_features, _ = self.feature_extraction(
-                right_input)
+            left_spp_features, left_low_level_features, left_low_level_features_1 = self.feature_extraction(left_input) # left_spp_features [1,32,64,128]
+            right_spp_features, right_low_level_features, _ = self.feature_extraction(right_input)
         else:
-            left_spp_features, left_low_level_features = self.feature_extraction(left_input)
+            left_spp_features, left_low_level_features = self.feature_extraction(left_input) #left_low_level_features 是这个块的第一个层的输出
             right_spp_features, right_low_level_features = self.feature_extraction(right_input)
 
         min_disparity, max_disparity = self.generate_search_range(
             left_spp_features,
-            sample_count=self.patch_match_sample_count, stage="pre")
+            sample_count=self.patch_match_sample_count, stage="pre") #pre 阶段只做初始化 min_disparity都是0，max_disparity都是48， [1,1,64,128]
 
         disparity_samples = self.generate_disparity_samples(
             left_spp_features,

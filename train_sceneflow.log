@@ -1,0 +1,2092 @@
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 7.422873
+loss_evaluation.py: ca_depth_loss: 8.756294
+loss_evaluation.py: quantile_loss_max_disparity: 1.070409
+loss_evaluation.py: quantile_loss_min_disparity: 49.402714
+loss_evaluation.py: max_disparity_loss: 2.665532
+loss_evaluation.py: min_disparity_loss: 51.529518
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 0 training loss = 106.816 , time = 9.68 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.754395
+loss_evaluation.py: ca_depth_loss: 32.704750
+loss_evaluation.py: quantile_loss_max_disparity: 37.526493
+loss_evaluation.py: quantile_loss_min_disparity: 25.369652
+loss_evaluation.py: max_disparity_loss: 39.019928
+loss_evaluation.py: min_disparity_loss: 36.217007
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 1 training loss = 193.447 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.906698
+loss_evaluation.py: ca_depth_loss: 20.971001
+loss_evaluation.py: quantile_loss_max_disparity: 10.936882
+loss_evaluation.py: quantile_loss_min_disparity: 6.472113
+loss_evaluation.py: max_disparity_loss: 14.148867
+loss_evaluation.py: min_disparity_loss: 16.806004
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 2 training loss = 88.527 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 31.553352
+loss_evaluation.py: ca_depth_loss: 30.648678
+loss_evaluation.py: quantile_loss_max_disparity: 12.126719
+loss_evaluation.py: quantile_loss_min_disparity: 2.250647
+loss_evaluation.py: max_disparity_loss: 20.835785
+loss_evaluation.py: min_disparity_loss: 23.112457
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 3 training loss = 116.809 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 36.336777
+loss_evaluation.py: ca_depth_loss: 35.095116
+loss_evaluation.py: quantile_loss_max_disparity: 12.274748
+loss_evaluation.py: quantile_loss_min_disparity: 1.930558
+loss_evaluation.py: max_disparity_loss: 19.754585
+loss_evaluation.py: min_disparity_loss: 28.748322
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 4 training loss = 130.490 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.287266
+loss_evaluation.py: ca_depth_loss: 21.480755
+loss_evaluation.py: quantile_loss_max_disparity: 6.168695
+loss_evaluation.py: quantile_loss_min_disparity: 2.016356
+loss_evaluation.py: max_disparity_loss: 23.049025
+loss_evaluation.py: min_disparity_loss: 15.632708
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 5 training loss = 85.716 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 97.610535
+loss_evaluation.py: ca_depth_loss: 96.903404
+loss_evaluation.py: quantile_loss_max_disparity: 64.082352
+loss_evaluation.py: quantile_loss_min_disparity: 4.670759
+loss_evaluation.py: max_disparity_loss: 68.754219
+loss_evaluation.py: min_disparity_loss: 90.532356
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 6 training loss = 404.051 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.293547
+loss_evaluation.py: ca_depth_loss: 26.937738
+loss_evaluation.py: quantile_loss_max_disparity: 7.924750
+loss_evaluation.py: quantile_loss_min_disparity: 3.013741
+loss_evaluation.py: max_disparity_loss: 23.902576
+loss_evaluation.py: min_disparity_loss: 20.754150
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 7 training loss = 104.618 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.829447
+loss_evaluation.py: ca_depth_loss: 15.382337
+loss_evaluation.py: quantile_loss_max_disparity: 2.710844
+loss_evaluation.py: quantile_loss_min_disparity: 9.920389
+loss_evaluation.py: max_disparity_loss: 34.087166
+loss_evaluation.py: min_disparity_loss: 14.655949
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 8 training loss = 81.412 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.526279
+loss_evaluation.py: ca_depth_loss: 15.912076
+loss_evaluation.py: quantile_loss_max_disparity: 2.481855
+loss_evaluation.py: quantile_loss_min_disparity: 4.370451
+loss_evaluation.py: max_disparity_loss: 26.590031
+loss_evaluation.py: min_disparity_loss: 11.597980
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 9 training loss = 72.280 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.340991
+loss_evaluation.py: ca_depth_loss: 15.915716
+loss_evaluation.py: quantile_loss_max_disparity: 2.749496
+loss_evaluation.py: quantile_loss_min_disparity: 7.940603
+loss_evaluation.py: max_disparity_loss: 31.360519
+loss_evaluation.py: min_disparity_loss: 13.571471
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 10 training loss = 78.001 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 28.523216
+loss_evaluation.py: ca_depth_loss: 28.173462
+loss_evaluation.py: quantile_loss_max_disparity: 10.228228
+loss_evaluation.py: quantile_loss_min_disparity: 4.922020
+loss_evaluation.py: max_disparity_loss: 30.313936
+loss_evaluation.py: min_disparity_loss: 23.723555
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 11 training loss = 118.230 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 31.792164
+loss_evaluation.py: ca_depth_loss: 32.717323
+loss_evaluation.py: quantile_loss_max_disparity: 12.913507
+loss_evaluation.py: quantile_loss_min_disparity: 2.180196
+loss_evaluation.py: max_disparity_loss: 25.562000
+loss_evaluation.py: min_disparity_loss: 28.255405
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 12 training loss = 126.813 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 57.770275
+loss_evaluation.py: ca_depth_loss: 58.199310
+loss_evaluation.py: quantile_loss_max_disparity: 32.231155
+loss_evaluation.py: quantile_loss_min_disparity: 7.654339
+loss_evaluation.py: max_disparity_loss: 46.912071
+loss_evaluation.py: min_disparity_loss: 56.030495
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 13 training loss = 245.246 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.464909
+loss_evaluation.py: ca_depth_loss: 16.839985
+loss_evaluation.py: quantile_loss_max_disparity: 4.339074
+loss_evaluation.py: quantile_loss_min_disparity: 8.614095
+loss_evaluation.py: max_disparity_loss: 35.769928
+loss_evaluation.py: min_disparity_loss: 14.321086
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 14 training loss = 86.261 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 25.921637
+loss_evaluation.py: ca_depth_loss: 25.988016
+loss_evaluation.py: quantile_loss_max_disparity: 4.766193
+loss_evaluation.py: quantile_loss_min_disparity: 1.227728
+loss_evaluation.py: max_disparity_loss: 12.507383
+loss_evaluation.py: min_disparity_loss: 23.698334
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 15 training loss = 91.024 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.976730
+loss_evaluation.py: ca_depth_loss: 36.903297
+loss_evaluation.py: quantile_loss_max_disparity: 17.020769
+loss_evaluation.py: quantile_loss_min_disparity: 4.967127
+loss_evaluation.py: max_disparity_loss: 34.108517
+loss_evaluation.py: min_disparity_loss: 33.178192
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 16 training loss = 151.462 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.366665
+loss_evaluation.py: ca_depth_loss: 22.091864
+loss_evaluation.py: quantile_loss_max_disparity: 7.305263
+loss_evaluation.py: quantile_loss_min_disparity: 3.637896
+loss_evaluation.py: max_disparity_loss: 29.035938
+loss_evaluation.py: min_disparity_loss: 16.728386
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 17 training loss = 91.547 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.663931
+loss_evaluation.py: ca_depth_loss: 14.951221
+loss_evaluation.py: quantile_loss_max_disparity: 2.136589
+loss_evaluation.py: quantile_loss_min_disparity: 2.100022
+loss_evaluation.py: max_disparity_loss: 22.930422
+loss_evaluation.py: min_disparity_loss: 10.676964
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 18 training loss = 63.076 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.168686
+loss_evaluation.py: ca_depth_loss: 29.479017
+loss_evaluation.py: quantile_loss_max_disparity: 11.000972
+loss_evaluation.py: quantile_loss_min_disparity: 3.879400
+loss_evaluation.py: max_disparity_loss: 26.484730
+loss_evaluation.py: min_disparity_loss: 25.438297
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 19 training loss = 116.025 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.017006
+loss_evaluation.py: ca_depth_loss: 18.760012
+loss_evaluation.py: quantile_loss_max_disparity: 3.391517
+loss_evaluation.py: quantile_loss_min_disparity: 2.101808
+loss_evaluation.py: max_disparity_loss: 20.248878
+loss_evaluation.py: min_disparity_loss: 14.968092
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 20 training loss = 72.327 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 41.218185
+loss_evaluation.py: ca_depth_loss: 42.006641
+loss_evaluation.py: quantile_loss_max_disparity: 18.562708
+loss_evaluation.py: quantile_loss_min_disparity: 2.248324
+loss_evaluation.py: max_disparity_loss: 24.231371
+loss_evaluation.py: min_disparity_loss: 40.534573
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 21 training loss = 161.737 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.879946
+loss_evaluation.py: ca_depth_loss: 17.867464
+loss_evaluation.py: quantile_loss_max_disparity: 3.002552
+loss_evaluation.py: quantile_loss_min_disparity: 10.529963
+loss_evaluation.py: max_disparity_loss: 34.181885
+loss_evaluation.py: min_disparity_loss: 15.993038
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 22 training loss = 85.866 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 83.638519
+loss_evaluation.py: ca_depth_loss: 83.265785
+loss_evaluation.py: quantile_loss_max_disparity: 53.710457
+loss_evaluation.py: quantile_loss_min_disparity: 4.301257
+loss_evaluation.py: max_disparity_loss: 57.309586
+loss_evaluation.py: min_disparity_loss: 82.247833
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 23 training loss = 347.698 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.708107
+loss_evaluation.py: ca_depth_loss: 21.928467
+loss_evaluation.py: quantile_loss_max_disparity: 7.242638
+loss_evaluation.py: quantile_loss_min_disparity: 2.685012
+loss_evaluation.py: max_disparity_loss: 25.026783
+loss_evaluation.py: min_disparity_loss: 18.055164
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 24 training loss = 88.934 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 66.862724
+loss_evaluation.py: ca_depth_loss: 68.453087
+loss_evaluation.py: quantile_loss_max_disparity: 40.621117
+loss_evaluation.py: quantile_loss_min_disparity: 3.418449
+loss_evaluation.py: max_disparity_loss: 43.402874
+loss_evaluation.py: min_disparity_loss: 67.445137
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 25 training loss = 277.008 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 32.402710
+loss_evaluation.py: ca_depth_loss: 33.347366
+loss_evaluation.py: quantile_loss_max_disparity: 13.904325
+loss_evaluation.py: quantile_loss_min_disparity: 2.802393
+loss_evaluation.py: max_disparity_loss: 26.288464
+loss_evaluation.py: min_disparity_loss: 30.957584
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 26 training loss = 132.250 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 84.205215
+loss_evaluation.py: ca_depth_loss: 87.111626
+loss_evaluation.py: quantile_loss_max_disparity: 61.802128
+loss_evaluation.py: quantile_loss_min_disparity: 4.571322
+loss_evaluation.py: max_disparity_loss: 69.495285
+loss_evaluation.py: min_disparity_loss: 86.382446
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 27 training loss = 372.066 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 79.350189
+loss_evaluation.py: ca_depth_loss: 81.939133
+loss_evaluation.py: quantile_loss_max_disparity: 54.947815
+loss_evaluation.py: quantile_loss_min_disparity: 4.273972
+loss_evaluation.py: max_disparity_loss: 59.670849
+loss_evaluation.py: min_disparity_loss: 82.557571
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 28 training loss = 343.876 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 13.364573
+loss_evaluation.py: ca_depth_loss: 15.894951
+loss_evaluation.py: quantile_loss_max_disparity: 2.371719
+loss_evaluation.py: quantile_loss_min_disparity: 2.303798
+loss_evaluation.py: max_disparity_loss: 23.738762
+loss_evaluation.py: min_disparity_loss: 11.317823
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 29 training loss = 62.484 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.390593
+loss_evaluation.py: ca_depth_loss: 28.381405
+loss_evaluation.py: quantile_loss_max_disparity: 11.273586
+loss_evaluation.py: quantile_loss_min_disparity: 5.874499
+loss_evaluation.py: max_disparity_loss: 35.121849
+loss_evaluation.py: min_disparity_loss: 23.807957
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 30 training loss = 122.388 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.695587
+loss_evaluation.py: ca_depth_loss: 31.217686
+loss_evaluation.py: quantile_loss_max_disparity: 10.901424
+loss_evaluation.py: quantile_loss_min_disparity: 1.698426
+loss_evaluation.py: max_disparity_loss: 17.372288
+loss_evaluation.py: min_disparity_loss: 31.641441
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 31 training loss = 112.831 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.059734
+loss_evaluation.py: ca_depth_loss: 21.168797
+loss_evaluation.py: quantile_loss_max_disparity: 4.945422
+loss_evaluation.py: quantile_loss_min_disparity: 1.309258
+loss_evaluation.py: max_disparity_loss: 17.943247
+loss_evaluation.py: min_disparity_loss: 20.084284
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 32 training loss = 76.220 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.131989
+loss_evaluation.py: ca_depth_loss: 17.277018
+loss_evaluation.py: quantile_loss_max_disparity: 2.718441
+loss_evaluation.py: quantile_loss_min_disparity: 2.505221
+loss_evaluation.py: max_disparity_loss: 25.450262
+loss_evaluation.py: min_disparity_loss: 11.408641
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 33 training loss = 67.973 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.195730
+loss_evaluation.py: ca_depth_loss: 27.829884
+loss_evaluation.py: quantile_loss_max_disparity: 9.561607
+loss_evaluation.py: quantile_loss_min_disparity: 4.777554
+loss_evaluation.py: max_disparity_loss: 28.987675
+loss_evaluation.py: min_disparity_loss: 24.139238
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 34 training loss = 113.412 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.302326
+loss_evaluation.py: ca_depth_loss: 21.034082
+loss_evaluation.py: quantile_loss_max_disparity: 5.088068
+loss_evaluation.py: quantile_loss_min_disparity: 1.316819
+loss_evaluation.py: max_disparity_loss: 19.300934
+loss_evaluation.py: min_disparity_loss: 19.545197
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 35 training loss = 75.824 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 65.370911
+loss_evaluation.py: ca_depth_loss: 67.890739
+loss_evaluation.py: quantile_loss_max_disparity: 43.949551
+loss_evaluation.py: quantile_loss_min_disparity: 5.160831
+loss_evaluation.py: max_disparity_loss: 53.157742
+loss_evaluation.py: min_disparity_loss: 70.533562
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 36 training loss = 288.567 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.145073
+loss_evaluation.py: ca_depth_loss: 21.007042
+loss_evaluation.py: quantile_loss_max_disparity: 4.963077
+loss_evaluation.py: quantile_loss_min_disparity: 1.583968
+loss_evaluation.py: max_disparity_loss: 20.547163
+loss_evaluation.py: min_disparity_loss: 18.980789
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 37 training loss = 77.512 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: nan
+loss_evaluation.py: ca_depth_loss: nan
+loss_evaluation.py: quantile_loss_max_disparity: nan
+loss_evaluation.py: quantile_loss_min_disparity: nan
+loss_evaluation.py: max_disparity_loss: nan
+loss_evaluation.py: min_disparity_loss: nan
+loss_evaluation.py: ==================================================
+
+x2num.py: NaN or Inf found in input tensor.
+train_sceneflow.py: Iter 38 training loss = nan , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.651583
+loss_evaluation.py: ca_depth_loss: 22.028843
+loss_evaluation.py: quantile_loss_max_disparity: 5.118252
+loss_evaluation.py: quantile_loss_min_disparity: 1.783052
+loss_evaluation.py: max_disparity_loss: 17.634045
+loss_evaluation.py: min_disparity_loss: 20.355122
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 39 training loss = 78.470 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.536978
+loss_evaluation.py: ca_depth_loss: 23.452730
+loss_evaluation.py: quantile_loss_max_disparity: 6.345166
+loss_evaluation.py: quantile_loss_min_disparity: 2.440701
+loss_evaluation.py: max_disparity_loss: 19.613121
+loss_evaluation.py: min_disparity_loss: 20.944448
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 40 training loss = 86.027 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 39.196136
+loss_evaluation.py: ca_depth_loss: 42.051750
+loss_evaluation.py: quantile_loss_max_disparity: 20.789812
+loss_evaluation.py: quantile_loss_min_disparity: 5.928724
+loss_evaluation.py: max_disparity_loss: 34.069489
+loss_evaluation.py: min_disparity_loss: 40.443645
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 41 training loss = 171.884 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 23.161469
+loss_evaluation.py: ca_depth_loss: 24.138245
+loss_evaluation.py: quantile_loss_max_disparity: 4.814754
+loss_evaluation.py: quantile_loss_min_disparity: 12.778897
+loss_evaluation.py: max_disparity_loss: 34.326176
+loss_evaluation.py: min_disparity_loss: 19.749550
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 42 training loss = 109.695 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 51.409317
+loss_evaluation.py: ca_depth_loss: 53.477825
+loss_evaluation.py: quantile_loss_max_disparity: 31.734051
+loss_evaluation.py: quantile_loss_min_disparity: 5.739569
+loss_evaluation.py: max_disparity_loss: 41.842125
+loss_evaluation.py: min_disparity_loss: 55.007614
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 43 training loss = 225.578 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.843651
+loss_evaluation.py: ca_depth_loss: 17.914843
+loss_evaluation.py: quantile_loss_max_disparity: 2.037858
+loss_evaluation.py: quantile_loss_min_disparity: 7.081624
+loss_evaluation.py: max_disparity_loss: 32.330265
+loss_evaluation.py: min_disparity_loss: 9.127748
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 44 training loss = 80.552 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.614529
+loss_evaluation.py: ca_depth_loss: 20.607006
+loss_evaluation.py: quantile_loss_max_disparity: 2.997417
+loss_evaluation.py: quantile_loss_min_disparity: 7.129092
+loss_evaluation.py: max_disparity_loss: 33.843483
+loss_evaluation.py: min_disparity_loss: 12.103662
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 45 training loss = 89.695 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 38.014248
+loss_evaluation.py: ca_depth_loss: 38.256096
+loss_evaluation.py: quantile_loss_max_disparity: 21.666443
+loss_evaluation.py: quantile_loss_min_disparity: 3.178724
+loss_evaluation.py: max_disparity_loss: 32.522919
+loss_evaluation.py: min_disparity_loss: 42.742252
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 46 training loss = 165.205 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 39.350403
+loss_evaluation.py: ca_depth_loss: 39.676170
+loss_evaluation.py: quantile_loss_max_disparity: 23.764606
+loss_evaluation.py: quantile_loss_min_disparity: 3.192506
+loss_evaluation.py: max_disparity_loss: 35.691444
+loss_evaluation.py: min_disparity_loss: 44.493675
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 47 training loss = 173.918 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.290291
+loss_evaluation.py: ca_depth_loss: 20.603800
+loss_evaluation.py: quantile_loss_max_disparity: 7.623204
+loss_evaluation.py: quantile_loss_min_disparity: 1.681436
+loss_evaluation.py: max_disparity_loss: 13.648665
+loss_evaluation.py: min_disparity_loss: 32.843475
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 48 training loss = 87.530 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 35.513081
+loss_evaluation.py: ca_depth_loss: 36.190010
+loss_evaluation.py: quantile_loss_max_disparity: 20.137712
+loss_evaluation.py: quantile_loss_min_disparity: 3.264424
+loss_evaluation.py: max_disparity_loss: 36.336792
+loss_evaluation.py: min_disparity_loss: 36.243240
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 49 training loss = 156.565 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.858734
+loss_evaluation.py: ca_depth_loss: 17.886475
+loss_evaluation.py: quantile_loss_max_disparity: 5.942504
+loss_evaluation.py: quantile_loss_min_disparity: 1.897347
+loss_evaluation.py: max_disparity_loss: 21.858585
+loss_evaluation.py: min_disparity_loss: 22.892252
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 50 training loss = 81.568 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.323153
+loss_evaluation.py: ca_depth_loss: 17.138126
+loss_evaluation.py: quantile_loss_max_disparity: 6.506468
+loss_evaluation.py: quantile_loss_min_disparity: 1.439200
+loss_evaluation.py: max_disparity_loss: 20.444702
+loss_evaluation.py: min_disparity_loss: 24.400602
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 51 training loss = 78.996 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.441124
+loss_evaluation.py: ca_depth_loss: 34.152512
+loss_evaluation.py: quantile_loss_max_disparity: 21.282639
+loss_evaluation.py: quantile_loss_min_disparity: 2.532059
+loss_evaluation.py: max_disparity_loss: 30.787441
+loss_evaluation.py: min_disparity_loss: 44.932262
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 52 training loss = 155.744 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.514078
+loss_evaluation.py: ca_depth_loss: 25.179653
+loss_evaluation.py: quantile_loss_max_disparity: 6.575340
+loss_evaluation.py: quantile_loss_min_disparity: 5.183484
+loss_evaluation.py: max_disparity_loss: 32.453842
+loss_evaluation.py: min_disparity_loss: 20.241192
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 53 training loss = 108.293 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.400503
+loss_evaluation.py: ca_depth_loss: 16.827564
+loss_evaluation.py: quantile_loss_max_disparity: 6.104540
+loss_evaluation.py: quantile_loss_min_disparity: 1.607488
+loss_evaluation.py: max_disparity_loss: 17.392899
+loss_evaluation.py: min_disparity_loss: 26.840511
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 54 training loss = 78.124 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 58.073109
+loss_evaluation.py: ca_depth_loss: 55.344860
+loss_evaluation.py: quantile_loss_max_disparity: 37.654301
+loss_evaluation.py: quantile_loss_min_disparity: 5.360738
+loss_evaluation.py: max_disparity_loss: 54.490044
+loss_evaluation.py: min_disparity_loss: 61.243122
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 55 training loss = 254.868 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.402811
+loss_evaluation.py: ca_depth_loss: 20.863956
+loss_evaluation.py: quantile_loss_max_disparity: 2.807002
+loss_evaluation.py: quantile_loss_min_disparity: 3.458088
+loss_evaluation.py: max_disparity_loss: 29.123604
+loss_evaluation.py: min_disparity_loss: 12.788969
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 56 training loss = 81.691 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 84.663719
+loss_evaluation.py: ca_depth_loss: 81.823936
+loss_evaluation.py: quantile_loss_max_disparity: 67.824242
+loss_evaluation.py: quantile_loss_min_disparity: 6.077035
+loss_evaluation.py: max_disparity_loss: 75.565636
+loss_evaluation.py: min_disparity_loss: 100.134804
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 57 training loss = 388.778 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.842495
+loss_evaluation.py: ca_depth_loss: 36.743557
+loss_evaluation.py: quantile_loss_max_disparity: 2.569355
+loss_evaluation.py: quantile_loss_min_disparity: 11.380020
+loss_evaluation.py: max_disparity_loss: 44.664112
+loss_evaluation.py: min_disparity_loss: 13.224848
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+train_sceneflow.py: Number of model parameters: 7390142
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 7.422873
+loss_evaluation.py: ca_depth_loss: 8.756294
+loss_evaluation.py: quantile_loss_max_disparity: 1.070409
+loss_evaluation.py: quantile_loss_min_disparity: 49.402714
+loss_evaluation.py: max_disparity_loss: 2.665532
+loss_evaluation.py: min_disparity_loss: 51.529518
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 0 training loss = 106.816 , time = 332.53 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.746895
+loss_evaluation.py: ca_depth_loss: 32.692474
+loss_evaluation.py: quantile_loss_max_disparity: 37.517357
+loss_evaluation.py: quantile_loss_min_disparity: 25.489164
+loss_evaluation.py: max_disparity_loss: 39.009655
+loss_evaluation.py: min_disparity_loss: 36.282581
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 1 training loss = 193.575 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.932354
+loss_evaluation.py: ca_depth_loss: 21.000042
+loss_evaluation.py: quantile_loss_max_disparity: 10.458697
+loss_evaluation.py: quantile_loss_min_disparity: 6.591947
+loss_evaluation.py: max_disparity_loss: 13.991598
+loss_evaluation.py: min_disparity_loss: 16.924839
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 2 training loss = 88.204 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 31.774399
+loss_evaluation.py: ca_depth_loss: 30.875261
+loss_evaluation.py: quantile_loss_max_disparity: 12.224218
+loss_evaluation.py: quantile_loss_min_disparity: 2.282068
+loss_evaluation.py: max_disparity_loss: 20.994499
+loss_evaluation.py: min_disparity_loss: 23.242981
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 3 training loss = 117.654 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 36.628304
+loss_evaluation.py: ca_depth_loss: 35.398537
+loss_evaluation.py: quantile_loss_max_disparity: 12.126668
+loss_evaluation.py: quantile_loss_min_disparity: 1.976724
+loss_evaluation.py: max_disparity_loss: 19.749662
+loss_evaluation.py: min_disparity_loss: 29.026875
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 4 training loss = 131.262 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.317814
+loss_evaluation.py: ca_depth_loss: 21.456554
+loss_evaluation.py: quantile_loss_max_disparity: 6.159428
+loss_evaluation.py: quantile_loss_min_disparity: 1.974691
+loss_evaluation.py: max_disparity_loss: 23.293369
+loss_evaluation.py: min_disparity_loss: 15.849020
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 5 training loss = 86.004 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 98.063553
+loss_evaluation.py: ca_depth_loss: 97.042320
+loss_evaluation.py: quantile_loss_max_disparity: 64.047340
+loss_evaluation.py: quantile_loss_min_disparity: 4.680477
+loss_evaluation.py: max_disparity_loss: 68.747330
+loss_evaluation.py: min_disparity_loss: 90.943207
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 6 training loss = 405.036 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.336521
+loss_evaluation.py: ca_depth_loss: 26.954981
+loss_evaluation.py: quantile_loss_max_disparity: 7.837517
+loss_evaluation.py: quantile_loss_min_disparity: 2.814032
+loss_evaluation.py: max_disparity_loss: 24.110968
+loss_evaluation.py: min_disparity_loss: 21.012222
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 7 training loss = 104.730 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.940849
+loss_evaluation.py: ca_depth_loss: 15.409790
+loss_evaluation.py: quantile_loss_max_disparity: 2.716290
+loss_evaluation.py: quantile_loss_min_disparity: 9.383209
+loss_evaluation.py: max_disparity_loss: 34.756859
+loss_evaluation.py: min_disparity_loss: 14.142242
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 8 training loss = 81.162 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.413794
+loss_evaluation.py: ca_depth_loss: 15.910298
+loss_evaluation.py: quantile_loss_max_disparity: 2.492822
+loss_evaluation.py: quantile_loss_min_disparity: 4.077250
+loss_evaluation.py: max_disparity_loss: 27.566572
+loss_evaluation.py: min_disparity_loss: 11.665351
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 9 training loss = 72.581 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.322688
+loss_evaluation.py: ca_depth_loss: 15.829298
+loss_evaluation.py: quantile_loss_max_disparity: 2.741957
+loss_evaluation.py: quantile_loss_min_disparity: 7.359099
+loss_evaluation.py: max_disparity_loss: 32.432838
+loss_evaluation.py: min_disparity_loss: 13.212276
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 10 training loss = 77.801 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 28.304131
+loss_evaluation.py: ca_depth_loss: 28.072748
+loss_evaluation.py: quantile_loss_max_disparity: 10.086033
+loss_evaluation.py: quantile_loss_min_disparity: 4.549367
+loss_evaluation.py: max_disparity_loss: 30.664619
+loss_evaluation.py: min_disparity_loss: 23.796076
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 11 training loss = 117.626 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 33.899307
+loss_evaluation.py: ca_depth_loss: 34.154472
+loss_evaluation.py: quantile_loss_max_disparity: 12.857084
+loss_evaluation.py: quantile_loss_min_disparity: 2.064063
+loss_evaluation.py: max_disparity_loss: 25.745884
+loss_evaluation.py: min_disparity_loss: 29.031307
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 12 training loss = 131.489 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 57.802376
+loss_evaluation.py: ca_depth_loss: 58.364861
+loss_evaluation.py: quantile_loss_max_disparity: 32.229446
+loss_evaluation.py: quantile_loss_min_disparity: 7.439085
+loss_evaluation.py: max_disparity_loss: 46.947548
+loss_evaluation.py: min_disparity_loss: 56.607845
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 13 training loss = 245.665 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.084763
+loss_evaluation.py: ca_depth_loss: 16.654985
+loss_evaluation.py: quantile_loss_max_disparity: 4.333453
+loss_evaluation.py: quantile_loss_min_disparity: 7.695163
+loss_evaluation.py: max_disparity_loss: 35.836895
+loss_evaluation.py: min_disparity_loss: 13.585079
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 14 training loss = 84.189 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.019684
+loss_evaluation.py: ca_depth_loss: 26.146908
+loss_evaluation.py: quantile_loss_max_disparity: 4.799767
+loss_evaluation.py: quantile_loss_min_disparity: 1.269445
+loss_evaluation.py: max_disparity_loss: 12.524214
+loss_evaluation.py: min_disparity_loss: 24.587774
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 15 training loss = 92.020 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.412167
+loss_evaluation.py: ca_depth_loss: 36.836311
+loss_evaluation.py: quantile_loss_max_disparity: 16.889217
+loss_evaluation.py: quantile_loss_min_disparity: 4.624918
+loss_evaluation.py: max_disparity_loss: 33.956165
+loss_evaluation.py: min_disparity_loss: 33.358147
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 16 training loss = 150.206 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.723679
+loss_evaluation.py: ca_depth_loss: 21.970367
+loss_evaluation.py: quantile_loss_max_disparity: 7.344956
+loss_evaluation.py: quantile_loss_min_disparity: 2.961305
+loss_evaluation.py: max_disparity_loss: 29.005421
+loss_evaluation.py: min_disparity_loss: 16.756763
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 17 training loss = 89.951 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.490273
+loss_evaluation.py: ca_depth_loss: 14.857686
+loss_evaluation.py: quantile_loss_max_disparity: 2.139647
+loss_evaluation.py: quantile_loss_min_disparity: 1.834115
+loss_evaluation.py: max_disparity_loss: 22.575630
+loss_evaluation.py: min_disparity_loss: 11.071189
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 18 training loss = 62.522 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.312300
+loss_evaluation.py: ca_depth_loss: 29.995600
+loss_evaluation.py: quantile_loss_max_disparity: 11.108763
+loss_evaluation.py: quantile_loss_min_disparity: 3.525194
+loss_evaluation.py: max_disparity_loss: 26.453493
+loss_evaluation.py: min_disparity_loss: 26.582291
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 19 training loss = 117.261 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.706314
+loss_evaluation.py: ca_depth_loss: 18.664227
+loss_evaluation.py: quantile_loss_max_disparity: 3.453652
+loss_evaluation.py: quantile_loss_min_disparity: 1.730741
+loss_evaluation.py: max_disparity_loss: 19.967705
+loss_evaluation.py: min_disparity_loss: 15.499577
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 20 training loss = 71.694 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 40.728363
+loss_evaluation.py: ca_depth_loss: 42.231651
+loss_evaluation.py: quantile_loss_max_disparity: 18.770435
+loss_evaluation.py: quantile_loss_min_disparity: 2.147406
+loss_evaluation.py: max_disparity_loss: 24.373013
+loss_evaluation.py: min_disparity_loss: 41.484051
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 21 training loss = 162.196 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.220318
+loss_evaluation.py: ca_depth_loss: 17.776251
+loss_evaluation.py: quantile_loss_max_disparity: 3.011011
+loss_evaluation.py: quantile_loss_min_disparity: 9.711363
+loss_evaluation.py: max_disparity_loss: 34.001080
+loss_evaluation.py: min_disparity_loss: 15.501308
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 22 training loss = 84.937 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 81.852722
+loss_evaluation.py: ca_depth_loss: 82.448639
+loss_evaluation.py: quantile_loss_max_disparity: 53.930840
+loss_evaluation.py: quantile_loss_min_disparity: 4.186468
+loss_evaluation.py: max_disparity_loss: 57.543053
+loss_evaluation.py: min_disparity_loss: 82.923141
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 23 training loss = 345.301 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.110270
+loss_evaluation.py: ca_depth_loss: 22.394108
+loss_evaluation.py: quantile_loss_max_disparity: 7.317510
+loss_evaluation.py: quantile_loss_min_disparity: 2.365540
+loss_evaluation.py: max_disparity_loss: 24.935308
+loss_evaluation.py: min_disparity_loss: 18.826366
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 24 training loss = 90.154 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 65.856918
+loss_evaluation.py: ca_depth_loss: 68.220139
+loss_evaluation.py: quantile_loss_max_disparity: 40.782555
+loss_evaluation.py: quantile_loss_min_disparity: 3.456751
+loss_evaluation.py: max_disparity_loss: 43.633835
+loss_evaluation.py: min_disparity_loss: 68.579765
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 25 training loss = 276.623 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 31.841171
+loss_evaluation.py: ca_depth_loss: 33.308666
+loss_evaluation.py: quantile_loss_max_disparity: 14.030190
+loss_evaluation.py: quantile_loss_min_disparity: 2.581132
+loss_evaluation.py: max_disparity_loss: 26.229351
+loss_evaluation.py: min_disparity_loss: 31.415804
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 26 training loss = 131.665 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 83.630692
+loss_evaluation.py: ca_depth_loss: 87.522720
+loss_evaluation.py: quantile_loss_max_disparity: 61.867264
+loss_evaluation.py: quantile_loss_min_disparity: 4.544787
+loss_evaluation.py: max_disparity_loss: 69.460075
+loss_evaluation.py: min_disparity_loss: 86.934090
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 27 training loss = 372.131 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 79.263130
+loss_evaluation.py: ca_depth_loss: 82.454132
+loss_evaluation.py: quantile_loss_max_disparity: 55.170967
+loss_evaluation.py: quantile_loss_min_disparity: 4.199247
+loss_evaluation.py: max_disparity_loss: 59.931339
+loss_evaluation.py: min_disparity_loss: 82.602844
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 28 training loss = 344.640 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 13.325401
+loss_evaluation.py: ca_depth_loss: 15.878338
+loss_evaluation.py: quantile_loss_max_disparity: 2.381907
+loss_evaluation.py: quantile_loss_min_disparity: 4.739519
+loss_evaluation.py: max_disparity_loss: 23.708380
+loss_evaluation.py: min_disparity_loss: 11.933171
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 29 training loss = 65.272 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.227892
+loss_evaluation.py: ca_depth_loss: 28.009037
+loss_evaluation.py: quantile_loss_max_disparity: 11.311152
+loss_evaluation.py: quantile_loss_min_disparity: 8.450687
+loss_evaluation.py: max_disparity_loss: 35.076519
+loss_evaluation.py: min_disparity_loss: 24.920189
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 30 training loss = 125.165 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.251207
+loss_evaluation.py: ca_depth_loss: 31.803371
+loss_evaluation.py: quantile_loss_max_disparity: 11.235628
+loss_evaluation.py: quantile_loss_min_disparity: 1.880941
+loss_evaluation.py: max_disparity_loss: 17.612133
+loss_evaluation.py: min_disparity_loss: 31.391062
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 31 training loss = 114.649 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.379669
+loss_evaluation.py: ca_depth_loss: 20.932690
+loss_evaluation.py: quantile_loss_max_disparity: 4.963017
+loss_evaluation.py: quantile_loss_min_disparity: 1.409089
+loss_evaluation.py: max_disparity_loss: 17.790651
+loss_evaluation.py: min_disparity_loss: 19.997429
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 32 training loss = 75.050 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.831352
+loss_evaluation.py: ca_depth_loss: 16.692322
+loss_evaluation.py: quantile_loss_max_disparity: 2.748528
+loss_evaluation.py: quantile_loss_min_disparity: 3.291358
+loss_evaluation.py: max_disparity_loss: 25.309700
+loss_evaluation.py: min_disparity_loss: 12.076341
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 33 training loss = 68.183 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 24.909115
+loss_evaluation.py: ca_depth_loss: 27.317429
+loss_evaluation.py: quantile_loss_max_disparity: 9.576693
+loss_evaluation.py: quantile_loss_min_disparity: 4.240038
+loss_evaluation.py: max_disparity_loss: 28.754074
+loss_evaluation.py: min_disparity_loss: 23.940434
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 34 training loss = 110.402 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.131413
+loss_evaluation.py: ca_depth_loss: 20.234259
+loss_evaluation.py: quantile_loss_max_disparity: 5.092566
+loss_evaluation.py: quantile_loss_min_disparity: 1.280035
+loss_evaluation.py: max_disparity_loss: 19.135574
+loss_evaluation.py: min_disparity_loss: 19.562164
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 35 training loss = 74.666 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 64.314445
+loss_evaluation.py: ca_depth_loss: 66.932213
+loss_evaluation.py: quantile_loss_max_disparity: 44.023239
+loss_evaluation.py: quantile_loss_min_disparity: 4.151747
+loss_evaluation.py: max_disparity_loss: 53.278259
+loss_evaluation.py: min_disparity_loss: 69.552391
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 36 training loss = 284.697 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.896123
+loss_evaluation.py: ca_depth_loss: 16.981781
+loss_evaluation.py: quantile_loss_max_disparity: 4.999006
+loss_evaluation.py: quantile_loss_min_disparity: 1.423257
+loss_evaluation.py: max_disparity_loss: 20.292480
+loss_evaluation.py: min_disparity_loss: 19.256119
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 37 training loss = 71.753 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: nan
+loss_evaluation.py: ca_depth_loss: nan
+loss_evaluation.py: quantile_loss_max_disparity: nan
+loss_evaluation.py: quantile_loss_min_disparity: nan
+loss_evaluation.py: max_disparity_loss: nan
+loss_evaluation.py: min_disparity_loss: nan
+loss_evaluation.py: ==================================================
+
+x2num.py: NaN or Inf found in input tensor.
+train_sceneflow.py: Iter 38 training loss = nan , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.710726
+loss_evaluation.py: ca_depth_loss: 16.294323
+loss_evaluation.py: quantile_loss_max_disparity: 5.160402
+loss_evaluation.py: quantile_loss_min_disparity: 1.499996
+loss_evaluation.py: max_disparity_loss: 17.448467
+loss_evaluation.py: min_disparity_loss: 21.660431
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 39 training loss = 70.755 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.708786
+loss_evaluation.py: ca_depth_loss: 17.397961
+loss_evaluation.py: quantile_loss_max_disparity: 6.368441
+loss_evaluation.py: quantile_loss_min_disparity: 1.721237
+loss_evaluation.py: max_disparity_loss: 19.261459
+loss_evaluation.py: min_disparity_loss: 22.273678
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 40 training loss = 76.284 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 37.216816
+loss_evaluation.py: ca_depth_loss: 36.826096
+loss_evaluation.py: quantile_loss_max_disparity: 21.092123
+loss_evaluation.py: quantile_loss_min_disparity: 4.643192
+loss_evaluation.py: max_disparity_loss: 34.170311
+loss_evaluation.py: min_disparity_loss: 42.430470
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 41 training loss = 164.564 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 24.467094
+loss_evaluation.py: ca_depth_loss: 24.780354
+loss_evaluation.py: quantile_loss_max_disparity: 4.995987
+loss_evaluation.py: quantile_loss_min_disparity: 7.859473
+loss_evaluation.py: max_disparity_loss: 34.301208
+loss_evaluation.py: min_disparity_loss: 17.280540
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 42 training loss = 105.550 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 48.644650
+loss_evaluation.py: ca_depth_loss: 46.957169
+loss_evaluation.py: quantile_loss_max_disparity: 31.988993
+loss_evaluation.py: quantile_loss_min_disparity: 5.165468
+loss_evaluation.py: max_disparity_loss: 42.005112
+loss_evaluation.py: min_disparity_loss: 56.982948
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 43 training loss = 216.641 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 23.509359
+loss_evaluation.py: ca_depth_loss: 22.361679
+loss_evaluation.py: quantile_loss_max_disparity: 2.036117
+loss_evaluation.py: quantile_loss_min_disparity: 6.168715
+loss_evaluation.py: max_disparity_loss: 32.462212
+loss_evaluation.py: min_disparity_loss: 8.817238
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 44 training loss = 90.024 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.632963
+loss_evaluation.py: ca_depth_loss: 23.841843
+loss_evaluation.py: quantile_loss_max_disparity: 3.062864
+loss_evaluation.py: quantile_loss_min_disparity: 6.475729
+loss_evaluation.py: max_disparity_loss: 33.876709
+loss_evaluation.py: min_disparity_loss: 11.469570
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 45 training loss = 94.546 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.468388
+loss_evaluation.py: ca_depth_loss: 34.431427
+loss_evaluation.py: quantile_loss_max_disparity: 21.767435
+loss_evaluation.py: quantile_loss_min_disparity: 3.091778
+loss_evaluation.py: max_disparity_loss: 32.662842
+loss_evaluation.py: min_disparity_loss: 42.509285
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 46 training loss = 156.720 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 37.132545
+loss_evaluation.py: ca_depth_loss: 36.576351
+loss_evaluation.py: quantile_loss_max_disparity: 25.192116
+loss_evaluation.py: quantile_loss_min_disparity: 3.344111
+loss_evaluation.py: max_disparity_loss: 37.129761
+loss_evaluation.py: min_disparity_loss: 44.051117
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 47 training loss = 170.212 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.941448
+loss_evaluation.py: ca_depth_loss: 13.782957
+loss_evaluation.py: quantile_loss_max_disparity: 7.884526
+loss_evaluation.py: quantile_loss_min_disparity: 1.574467
+loss_evaluation.py: max_disparity_loss: 13.594786
+loss_evaluation.py: min_disparity_loss: 30.817680
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 48 training loss = 75.055 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 33.413834
+loss_evaluation.py: ca_depth_loss: 35.224495
+loss_evaluation.py: quantile_loss_max_disparity: 20.107803
+loss_evaluation.py: quantile_loss_min_disparity: 4.196891
+loss_evaluation.py: max_disparity_loss: 36.306107
+loss_evaluation.py: min_disparity_loss: 37.775909
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 49 training loss = 154.825 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 16.592987
+loss_evaluation.py: ca_depth_loss: 15.470631
+loss_evaluation.py: quantile_loss_max_disparity: 5.918559
+loss_evaluation.py: quantile_loss_min_disparity: 2.179891
+loss_evaluation.py: max_disparity_loss: 21.319719
+loss_evaluation.py: min_disparity_loss: 21.228624
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 50 training loss = 74.924 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 13.452461
+loss_evaluation.py: ca_depth_loss: 14.086874
+loss_evaluation.py: quantile_loss_max_disparity: 6.700728
+loss_evaluation.py: quantile_loss_min_disparity: 1.518932
+loss_evaluation.py: max_disparity_loss: 19.989956
+loss_evaluation.py: min_disparity_loss: 23.168373
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 51 training loss = 70.006 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 29.533707
+loss_evaluation.py: ca_depth_loss: 30.014580
+loss_evaluation.py: quantile_loss_max_disparity: 21.456118
+loss_evaluation.py: quantile_loss_min_disparity: 2.363292
+loss_evaluation.py: max_disparity_loss: 30.590513
+loss_evaluation.py: min_disparity_loss: 43.401024
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 52 training loss = 144.022 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.806076
+loss_evaluation.py: ca_depth_loss: 25.721905
+loss_evaluation.py: quantile_loss_max_disparity: 6.561044
+loss_evaluation.py: quantile_loss_min_disparity: 5.568197
+loss_evaluation.py: max_disparity_loss: 31.461491
+loss_evaluation.py: min_disparity_loss: 19.981335
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 53 training loss = 103.509 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.996392
+loss_evaluation.py: ca_depth_loss: 11.945639
+loss_evaluation.py: quantile_loss_max_disparity: 6.209311
+loss_evaluation.py: quantile_loss_min_disparity: 1.561347
+loss_evaluation.py: max_disparity_loss: 16.883638
+loss_evaluation.py: min_disparity_loss: 25.464872
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 54 training loss = 68.856 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 61.217827
+loss_evaluation.py: ca_depth_loss: 54.423119
+loss_evaluation.py: quantile_loss_max_disparity: 37.585148
+loss_evaluation.py: quantile_loss_min_disparity: 5.742692
+loss_evaluation.py: max_disparity_loss: 53.984924
+loss_evaluation.py: min_disparity_loss: 60.780224
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 55 training loss = 257.670 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.253834
+loss_evaluation.py: ca_depth_loss: 20.798176
+loss_evaluation.py: quantile_loss_max_disparity: 2.900790
+loss_evaluation.py: quantile_loss_min_disparity: 3.854932
+loss_evaluation.py: max_disparity_loss: 28.628910
+loss_evaluation.py: min_disparity_loss: 12.914932
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 56 training loss = 81.665 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 82.518600
+loss_evaluation.py: ca_depth_loss: 81.908508
+loss_evaluation.py: quantile_loss_max_disparity: 68.299194
+loss_evaluation.py: quantile_loss_min_disparity: 6.150320
+loss_evaluation.py: max_disparity_loss: 76.104103
+loss_evaluation.py: min_disparity_loss: 99.175423
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 57 training loss = 386.328 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.838272
+loss_evaluation.py: ca_depth_loss: 36.001720
+loss_evaluation.py: quantile_loss_max_disparity: 2.545159
+loss_evaluation.py: quantile_loss_min_disparity: 12.014980
+loss_evaluation.py: max_disparity_loss: 43.862469
+loss_evaluation.py: min_disparity_loss: 13.707248
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 58 training loss = 136.150 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 55.521282
+loss_evaluation.py: ca_depth_loss: 54.632248
+loss_evaluation.py: quantile_loss_max_disparity: 45.289452
+loss_evaluation.py: quantile_loss_min_disparity: 3.910273
+loss_evaluation.py: max_disparity_loss: 50.727467
+loss_evaluation.py: min_disparity_loss: 75.760422
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 59 training loss = 264.551 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.627304
+loss_evaluation.py: ca_depth_loss: 16.821026
+loss_evaluation.py: quantile_loss_max_disparity: 7.715442
+loss_evaluation.py: quantile_loss_min_disparity: 1.660338
+loss_evaluation.py: max_disparity_loss: 21.199406
+loss_evaluation.py: min_disparity_loss: 26.167858
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 60 training loss = 78.369 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.997603
+loss_evaluation.py: ca_depth_loss: 17.226021
+loss_evaluation.py: quantile_loss_max_disparity: 2.372631
+loss_evaluation.py: quantile_loss_min_disparity: 1.882430
+loss_evaluation.py: max_disparity_loss: 26.783514
+loss_evaluation.py: min_disparity_loss: 12.179935
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 61 training loss = 69.552 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 36.458061
+loss_evaluation.py: ca_depth_loss: 35.069561
+loss_evaluation.py: quantile_loss_max_disparity: 26.604595
+loss_evaluation.py: quantile_loss_min_disparity: 2.948712
+loss_evaluation.py: max_disparity_loss: 29.609894
+loss_evaluation.py: min_disparity_loss: 58.432068
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 62 training loss = 173.648 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.197664
+loss_evaluation.py: ca_depth_loss: 26.612591
+loss_evaluation.py: quantile_loss_max_disparity: 15.247166
+loss_evaluation.py: quantile_loss_min_disparity: 3.130214
+loss_evaluation.py: max_disparity_loss: 27.588509
+loss_evaluation.py: min_disparity_loss: 38.689880
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 63 training loss = 125.442 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.785458
+loss_evaluation.py: ca_depth_loss: 29.774830
+loss_evaluation.py: quantile_loss_max_disparity: 4.670002
+loss_evaluation.py: quantile_loss_min_disparity: 7.204937
+loss_evaluation.py: max_disparity_loss: 37.613945
+loss_evaluation.py: min_disparity_loss: 18.327448
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 64 training loss = 116.930 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 39.390003
+loss_evaluation.py: ca_depth_loss: 40.383141
+loss_evaluation.py: quantile_loss_max_disparity: 2.782192
+loss_evaluation.py: quantile_loss_min_disparity: 14.037825
+loss_evaluation.py: max_disparity_loss: 49.266083
+loss_evaluation.py: min_disparity_loss: 17.063488
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 65 training loss = 154.841 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.668179
+loss_evaluation.py: ca_depth_loss: 24.527451
+loss_evaluation.py: quantile_loss_max_disparity: 3.365545
+loss_evaluation.py: quantile_loss_min_disparity: 3.436038
+loss_evaluation.py: max_disparity_loss: 32.712749
+loss_evaluation.py: min_disparity_loss: 12.703248
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 66 training loss = 92.589 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 9.500393
+loss_evaluation.py: ca_depth_loss: 10.107227
+loss_evaluation.py: quantile_loss_max_disparity: 4.390906
+loss_evaluation.py: quantile_loss_min_disparity: 1.401124
+loss_evaluation.py: max_disparity_loss: 17.709324
+loss_evaluation.py: min_disparity_loss: 24.428967
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 67 training loss = 57.747 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 7.466583
+loss_evaluation.py: ca_depth_loss: 9.265635
+loss_evaluation.py: quantile_loss_max_disparity: 3.116636
+loss_evaluation.py: quantile_loss_min_disparity: 1.113354
+loss_evaluation.py: max_disparity_loss: 19.200809
+loss_evaluation.py: min_disparity_loss: 20.096922
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 68 training loss = 50.711 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 25.540474
+loss_evaluation.py: ca_depth_loss: 27.082106
+loss_evaluation.py: quantile_loss_max_disparity: 13.830188
+loss_evaluation.py: quantile_loss_min_disparity: 2.463898
+loss_evaluation.py: max_disparity_loss: 29.734653
+loss_evaluation.py: min_disparity_loss: 32.614204
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 69 training loss = 120.223 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 23.548096
+loss_evaluation.py: ca_depth_loss: 24.975594
+loss_evaluation.py: quantile_loss_max_disparity: 3.485302
+loss_evaluation.py: quantile_loss_min_disparity: 6.442104
+loss_evaluation.py: max_disparity_loss: 35.210022
+loss_evaluation.py: min_disparity_loss: 15.056410
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 70 training loss = 100.702 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.259987
+loss_evaluation.py: ca_depth_loss: 22.687300
+loss_evaluation.py: quantile_loss_max_disparity: 8.696892
+loss_evaluation.py: quantile_loss_min_disparity: 3.578667
+loss_evaluation.py: max_disparity_loss: 27.424202
+loss_evaluation.py: min_disparity_loss: 26.453676
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 71 training loss = 100.315 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 34.075146
+loss_evaluation.py: ca_depth_loss: 33.076099
+loss_evaluation.py: quantile_loss_max_disparity: 21.740318
+loss_evaluation.py: quantile_loss_min_disparity: 2.627224
+loss_evaluation.py: max_disparity_loss: 25.211525
+loss_evaluation.py: min_disparity_loss: 51.956455
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 72 training loss = 155.759 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 9.916052
+loss_evaluation.py: ca_depth_loss: 11.899875
+loss_evaluation.py: quantile_loss_max_disparity: 2.624048
+loss_evaluation.py: quantile_loss_min_disparity: 1.448228
+loss_evaluation.py: max_disparity_loss: 23.863592
+loss_evaluation.py: min_disparity_loss: 14.129410
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 73 training loss = 55.458 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.349508
+loss_evaluation.py: ca_depth_loss: 25.444956
+loss_evaluation.py: quantile_loss_max_disparity: 10.887720
+loss_evaluation.py: quantile_loss_min_disparity: 3.884930
+loss_evaluation.py: max_disparity_loss: 31.099056
+loss_evaluation.py: min_disparity_loss: 27.333691
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 74 training loss = 110.175 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 55.527874
+loss_evaluation.py: ca_depth_loss: 56.365627
+loss_evaluation.py: quantile_loss_max_disparity: 41.229752
+loss_evaluation.py: quantile_loss_min_disparity: 3.882447
+loss_evaluation.py: max_disparity_loss: 49.369820
+loss_evaluation.py: min_disparity_loss: 69.083076
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 75 training loss = 256.581 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.024988
+loss_evaluation.py: ca_depth_loss: 27.673067
+loss_evaluation.py: quantile_loss_max_disparity: 2.296069
+loss_evaluation.py: quantile_loss_min_disparity: 10.384289
+loss_evaluation.py: max_disparity_loss: 41.924740
+loss_evaluation.py: min_disparity_loss: 12.577668
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 76 training loss = 112.338 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.602352
+loss_evaluation.py: ca_depth_loss: 15.721467
+loss_evaluation.py: quantile_loss_max_disparity: 3.313204
+loss_evaluation.py: quantile_loss_min_disparity: 3.304453
+loss_evaluation.py: max_disparity_loss: 26.254368
+loss_evaluation.py: min_disparity_loss: 15.692543
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 77 training loss = 70.685 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.006580
+loss_evaluation.py: ca_depth_loss: 21.063805
+loss_evaluation.py: quantile_loss_max_disparity: 4.432320
+loss_evaluation.py: quantile_loss_min_disparity: 5.533317
+loss_evaluation.py: max_disparity_loss: 29.653395
+loss_evaluation.py: min_disparity_loss: 18.704468
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 78 training loss = 90.889 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 12.449951
+loss_evaluation.py: ca_depth_loss: 12.189799
+loss_evaluation.py: quantile_loss_max_disparity: 4.439263
+loss_evaluation.py: quantile_loss_min_disparity: 1.441458
+loss_evaluation.py: max_disparity_loss: 19.432491
+loss_evaluation.py: min_disparity_loss: 20.724014
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 79 training loss = 62.365 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 32.562710
+loss_evaluation.py: ca_depth_loss: 33.125912
+loss_evaluation.py: quantile_loss_max_disparity: 12.549894
+loss_evaluation.py: quantile_loss_min_disparity: 8.797174
+loss_evaluation.py: max_disparity_loss: 34.726944
+loss_evaluation.py: min_disparity_loss: 35.390251
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 80 training loss = 145.887 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.246960
+loss_evaluation.py: ca_depth_loss: 16.612503
+loss_evaluation.py: quantile_loss_max_disparity: 6.089554
+loss_evaluation.py: quantile_loss_min_disparity: 3.730295
+loss_evaluation.py: max_disparity_loss: 23.272121
+loss_evaluation.py: min_disparity_loss: 24.303598
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 81 training loss = 82.156 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 7.915363
+loss_evaluation.py: ca_depth_loss: 10.616564
+loss_evaluation.py: quantile_loss_max_disparity: 2.303380
+loss_evaluation.py: quantile_loss_min_disparity: 1.963636
+loss_evaluation.py: max_disparity_loss: 25.270004
+loss_evaluation.py: min_disparity_loss: 11.803535
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 82 training loss = 51.125 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 56.285969
+loss_evaluation.py: ca_depth_loss: 54.993698
+loss_evaluation.py: quantile_loss_max_disparity: 37.389397
+loss_evaluation.py: quantile_loss_min_disparity: 4.942456
+loss_evaluation.py: max_disparity_loss: 52.173740
+loss_evaluation.py: min_disparity_loss: 60.303814
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 83 training loss = 249.232 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 29.020729
+loss_evaluation.py: ca_depth_loss: 30.098675
+loss_evaluation.py: quantile_loss_max_disparity: 14.660317
+loss_evaluation.py: quantile_loss_min_disparity: 3.569957
+loss_evaluation.py: max_disparity_loss: 29.261759
+loss_evaluation.py: min_disparity_loss: 33.762318
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 84 training loss = 130.173 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.047894
+loss_evaluation.py: ca_depth_loss: 19.877125
+loss_evaluation.py: quantile_loss_max_disparity: 9.112564
+loss_evaluation.py: quantile_loss_min_disparity: 2.065269
+loss_evaluation.py: max_disparity_loss: 21.078947
+loss_evaluation.py: min_disparity_loss: 28.406902
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 85 training loss = 91.757 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.969143
+loss_evaluation.py: ca_depth_loss: 21.636318
+loss_evaluation.py: quantile_loss_max_disparity: 8.445450
+loss_evaluation.py: quantile_loss_min_disparity: 4.198820
+loss_evaluation.py: max_disparity_loss: 32.140987
+loss_evaluation.py: min_disparity_loss: 19.966825
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 86 training loss = 95.416 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.003307
+loss_evaluation.py: ca_depth_loss: 15.803116
+loss_evaluation.py: quantile_loss_max_disparity: 6.206254
+loss_evaluation.py: quantile_loss_min_disparity: 1.726338
+loss_evaluation.py: max_disparity_loss: 19.078360
+loss_evaluation.py: min_disparity_loss: 23.369171
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 87 training loss = 72.953 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 23.530552
+loss_evaluation.py: ca_depth_loss: 24.474951
+loss_evaluation.py: quantile_loss_max_disparity: 9.052565
+loss_evaluation.py: quantile_loss_min_disparity: 4.691025
+loss_evaluation.py: max_disparity_loss: 30.917847
+loss_evaluation.py: min_disparity_loss: 22.928415
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 88 training loss = 106.501 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.431362
+loss_evaluation.py: ca_depth_loss: 18.506077
+loss_evaluation.py: quantile_loss_max_disparity: 7.431139
+loss_evaluation.py: quantile_loss_min_disparity: 2.414288
+loss_evaluation.py: max_disparity_loss: 23.078966
+loss_evaluation.py: min_disparity_loss: 22.497715
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 89 training loss = 82.916 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 28.276245
+loss_evaluation.py: ca_depth_loss: 30.158092
+loss_evaluation.py: quantile_loss_max_disparity: 15.558126
+loss_evaluation.py: quantile_loss_min_disparity: 3.872758
+loss_evaluation.py: max_disparity_loss: 33.979858
+loss_evaluation.py: min_disparity_loss: 31.107555
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 90 training loss = 131.909 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 25.063377
+loss_evaluation.py: ca_depth_loss: 26.539536
+loss_evaluation.py: quantile_loss_max_disparity: 2.902121
+loss_evaluation.py: quantile_loss_min_disparity: 13.198093
+loss_evaluation.py: max_disparity_loss: 39.855320
+loss_evaluation.py: min_disparity_loss: 18.014671
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 91 training loss = 115.731 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 32.891052
+loss_evaluation.py: ca_depth_loss: 33.881496
+loss_evaluation.py: quantile_loss_max_disparity: 16.675076
+loss_evaluation.py: quantile_loss_min_disparity: 5.111744
+loss_evaluation.py: max_disparity_loss: 33.632629
+loss_evaluation.py: min_disparity_loss: 34.020226
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 92 training loss = 145.784 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 65.580338
+loss_evaluation.py: ca_depth_loss: 63.969372
+loss_evaluation.py: quantile_loss_max_disparity: 46.620392
+loss_evaluation.py: quantile_loss_min_disparity: 3.843283
+loss_evaluation.py: max_disparity_loss: 48.740608
+loss_evaluation.py: min_disparity_loss: 76.365654
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 93 training loss = 287.262 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 29.318752
+loss_evaluation.py: ca_depth_loss: 30.350912
+loss_evaluation.py: quantile_loss_max_disparity: 11.748640
+loss_evaluation.py: quantile_loss_min_disparity: 6.746999
+loss_evaluation.py: max_disparity_loss: 35.701012
+loss_evaluation.py: min_disparity_loss: 27.203959
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 94 training loss = 130.994 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.965012
+loss_evaluation.py: ca_depth_loss: 23.165693
+loss_evaluation.py: quantile_loss_max_disparity: 2.391241
+loss_evaluation.py: quantile_loss_min_disparity: 10.272377
+loss_evaluation.py: max_disparity_loss: 38.281216
+loss_evaluation.py: min_disparity_loss: 13.804457
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 95 training loss = 99.544 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 15.392419
+loss_evaluation.py: ca_depth_loss: 17.242268
+loss_evaluation.py: quantile_loss_max_disparity: 5.798303
+loss_evaluation.py: quantile_loss_min_disparity: 2.913037
+loss_evaluation.py: max_disparity_loss: 28.261831
+loss_evaluation.py: min_disparity_loss: 15.611582
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 96 training loss = 76.675 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.536007
+loss_evaluation.py: ca_depth_loss: 21.054607
+loss_evaluation.py: quantile_loss_max_disparity: 4.538491
+loss_evaluation.py: quantile_loss_min_disparity: 5.904046
+loss_evaluation.py: max_disparity_loss: 31.495909
+loss_evaluation.py: min_disparity_loss: 15.756342
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 97 training loss = 88.671 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.884216
+loss_evaluation.py: ca_depth_loss: 17.727100
+loss_evaluation.py: quantile_loss_max_disparity: 8.902594
+loss_evaluation.py: quantile_loss_min_disparity: 1.531388
+loss_evaluation.py: max_disparity_loss: 17.478500
+loss_evaluation.py: min_disparity_loss: 29.487354
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 98 training loss = 85.587 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 5.432322
+loss_evaluation.py: ca_depth_loss: 7.390350
+loss_evaluation.py: quantile_loss_max_disparity: 2.703259
+loss_evaluation.py: quantile_loss_min_disparity: 1.082881
+loss_evaluation.py: max_disparity_loss: 19.099194
+loss_evaluation.py: min_disparity_loss: 15.055570
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 99 training loss = 42.147 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 60.769955
+loss_evaluation.py: ca_depth_loss: 59.326618
+loss_evaluation.py: quantile_loss_max_disparity: 41.215530
+loss_evaluation.py: quantile_loss_min_disparity: 3.594227
+loss_evaluation.py: max_disparity_loss: 44.624077
+loss_evaluation.py: min_disparity_loss: 70.938797
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 100 training loss = 264.031 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 20.851980
+loss_evaluation.py: ca_depth_loss: 22.725010
+loss_evaluation.py: quantile_loss_max_disparity: 6.506212
+loss_evaluation.py: quantile_loss_min_disparity: 5.211811
+loss_evaluation.py: max_disparity_loss: 34.201027
+loss_evaluation.py: min_disparity_loss: 16.588829
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 101 training loss = 97.104 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 31.873035
+loss_evaluation.py: ca_depth_loss: 33.680389
+loss_evaluation.py: quantile_loss_max_disparity: 2.610594
+loss_evaluation.py: quantile_loss_min_disparity: 19.192747
+loss_evaluation.py: max_disparity_loss: 51.709507
+loss_evaluation.py: min_disparity_loss: 19.728273
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 102 training loss = 146.925 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.877945
+loss_evaluation.py: ca_depth_loss: 17.978985
+loss_evaluation.py: quantile_loss_max_disparity: 3.969252
+loss_evaluation.py: quantile_loss_min_disparity: 4.773827
+loss_evaluation.py: max_disparity_loss: 28.444628
+loss_evaluation.py: min_disparity_loss: 15.430979
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 103 training loss = 76.776 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 37.960037
+loss_evaluation.py: ca_depth_loss: 39.248463
+loss_evaluation.py: quantile_loss_max_disparity: 20.947971
+loss_evaluation.py: quantile_loss_min_disparity: 5.911723
+loss_evaluation.py: max_disparity_loss: 40.141788
+loss_evaluation.py: min_disparity_loss: 39.775764
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 104 training loss = 171.398 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 6.285097
+loss_evaluation.py: ca_depth_loss: 8.688959
+loss_evaluation.py: quantile_loss_max_disparity: 2.200996
+loss_evaluation.py: quantile_loss_min_disparity: 1.537952
+loss_evaluation.py: max_disparity_loss: 22.958351
+loss_evaluation.py: min_disparity_loss: 11.249252
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 105 training loss = 44.544 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.758915
+loss_evaluation.py: ca_depth_loss: 23.992363
+loss_evaluation.py: quantile_loss_max_disparity: 6.284653
+loss_evaluation.py: quantile_loss_min_disparity: 7.652955
+loss_evaluation.py: max_disparity_loss: 30.905277
+loss_evaluation.py: min_disparity_loss: 22.409775
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 106 training loss = 103.537 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 8.009686
+loss_evaluation.py: ca_depth_loss: 10.457935
+loss_evaluation.py: quantile_loss_max_disparity: 2.382395
+loss_evaluation.py: quantile_loss_min_disparity: 3.115654
+loss_evaluation.py: max_disparity_loss: 24.196524
+loss_evaluation.py: min_disparity_loss: 11.691343
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 107 training loss = 51.490 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 24.526123
+loss_evaluation.py: ca_depth_loss: 27.626732
+loss_evaluation.py: quantile_loss_max_disparity: 16.540428
+loss_evaluation.py: quantile_loss_min_disparity: 2.869638
+loss_evaluation.py: max_disparity_loss: 30.730000
+loss_evaluation.py: min_disparity_loss: 32.442043
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 108 training loss = 123.141 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 13.029141
+loss_evaluation.py: ca_depth_loss: 15.372365
+loss_evaluation.py: quantile_loss_max_disparity: 3.210518
+loss_evaluation.py: quantile_loss_min_disparity: 5.015792
+loss_evaluation.py: max_disparity_loss: 25.878105
+loss_evaluation.py: min_disparity_loss: 15.248569
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 109 training loss = 69.325 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.804806
+loss_evaluation.py: ca_depth_loss: 21.112587
+loss_evaluation.py: quantile_loss_max_disparity: 8.566427
+loss_evaluation.py: quantile_loss_min_disparity: 2.487621
+loss_evaluation.py: max_disparity_loss: 21.852741
+loss_evaluation.py: min_disparity_loss: 24.236233
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 110 training loss = 90.175 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 32.350819
+loss_evaluation.py: ca_depth_loss: 31.198044
+loss_evaluation.py: quantile_loss_max_disparity: 19.253958
+loss_evaluation.py: quantile_loss_min_disparity: 2.050680
+loss_evaluation.py: max_disparity_loss: 26.901350
+loss_evaluation.py: min_disparity_loss: 39.102745
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 111 training loss = 140.762 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.503895
+loss_evaluation.py: ca_depth_loss: 19.581453
+loss_evaluation.py: quantile_loss_max_disparity: 7.588463
+loss_evaluation.py: quantile_loss_min_disparity: 2.033669
+loss_evaluation.py: max_disparity_loss: 17.355682
+loss_evaluation.py: min_disparity_loss: 25.595654
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 112 training loss = 87.225 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 17.746435
+loss_evaluation.py: ca_depth_loss: 21.801441
+loss_evaluation.py: quantile_loss_max_disparity: 2.329616
+loss_evaluation.py: quantile_loss_min_disparity: 13.064256
+loss_evaluation.py: max_disparity_loss: 38.231403
+loss_evaluation.py: min_disparity_loss: 17.013300
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 113 training loss = 98.937 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 12.380709
+loss_evaluation.py: ca_depth_loss: 14.968010
+loss_evaluation.py: quantile_loss_max_disparity: 4.053899
+loss_evaluation.py: quantile_loss_min_disparity: 4.267262
+loss_evaluation.py: max_disparity_loss: 24.753603
+loss_evaluation.py: min_disparity_loss: 15.453472
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 114 training loss = 67.529 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 59.204826
+loss_evaluation.py: ca_depth_loss: 58.410774
+loss_evaluation.py: quantile_loss_max_disparity: 42.054428
+loss_evaluation.py: quantile_loss_min_disparity: 3.474635
+loss_evaluation.py: max_disparity_loss: 46.593803
+loss_evaluation.py: min_disparity_loss: 66.745018
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 115 training loss = 260.243 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 22.319336
+loss_evaluation.py: ca_depth_loss: 23.892067
+loss_evaluation.py: quantile_loss_max_disparity: 3.126747
+loss_evaluation.py: quantile_loss_min_disparity: 12.192268
+loss_evaluation.py: max_disparity_loss: 35.953682
+loss_evaluation.py: min_disparity_loss: 17.726353
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 116 training loss = 105.802 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 26.216516
+loss_evaluation.py: ca_depth_loss: 29.732925
+loss_evaluation.py: quantile_loss_max_disparity: 15.637470
+loss_evaluation.py: quantile_loss_min_disparity: 5.627351
+loss_evaluation.py: max_disparity_loss: 33.320942
+loss_evaluation.py: min_disparity_loss: 31.867126
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 117 training loss = 130.711 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 27.283760
+loss_evaluation.py: ca_depth_loss: 28.768509
+loss_evaluation.py: quantile_loss_max_disparity: 13.682039
+loss_evaluation.py: quantile_loss_min_disparity: 6.123953
+loss_evaluation.py: max_disparity_loss: 34.756733
+loss_evaluation.py: min_disparity_loss: 28.028652
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 118 training loss = 127.993 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 14.014305
+loss_evaluation.py: ca_depth_loss: 14.875592
+loss_evaluation.py: quantile_loss_max_disparity: 5.815794
+loss_evaluation.py: quantile_loss_min_disparity: 1.785058
+loss_evaluation.py: max_disparity_loss: 17.771616
+loss_evaluation.py: min_disparity_loss: 19.823006
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 119 training loss = 67.011 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 13.843938
+loss_evaluation.py: ca_depth_loss: 14.723351
+loss_evaluation.py: quantile_loss_max_disparity: 7.010870
+loss_evaluation.py: quantile_loss_min_disparity: 1.532243
+loss_evaluation.py: max_disparity_loss: 17.023207
+loss_evaluation.py: min_disparity_loss: 22.415176
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 120 training loss = 68.870 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 24.359791
+loss_evaluation.py: ca_depth_loss: 27.145493
+loss_evaluation.py: quantile_loss_max_disparity: 6.638565
+loss_evaluation.py: quantile_loss_min_disparity: 11.211147
+loss_evaluation.py: max_disparity_loss: 32.601803
+loss_evaluation.py: min_disparity_loss: 25.204178
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 121 training loss = 117.127 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 19.442122
+loss_evaluation.py: ca_depth_loss: 21.781437
+loss_evaluation.py: quantile_loss_max_disparity: 8.569202
+loss_evaluation.py: quantile_loss_min_disparity: 4.449832
+loss_evaluation.py: max_disparity_loss: 26.547821
+loss_evaluation.py: min_disparity_loss: 21.617123
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 122 training loss = 93.791 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 77.922203
+loss_evaluation.py: ca_depth_loss: 76.834198
+loss_evaluation.py: quantile_loss_max_disparity: 60.589291
+loss_evaluation.py: quantile_loss_min_disparity: 4.410130
+loss_evaluation.py: max_disparity_loss: 63.842960
+loss_evaluation.py: min_disparity_loss: 87.580124
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 123 training loss = 349.129 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 21.082661
+loss_evaluation.py: ca_depth_loss: 23.437557
+loss_evaluation.py: quantile_loss_max_disparity: 9.301338
+loss_evaluation.py: quantile_loss_min_disparity: 5.406249
+loss_evaluation.py: max_disparity_loss: 31.547901
+loss_evaluation.py: min_disparity_loss: 20.237003
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 124 training loss = 101.802 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 32.107986
+loss_evaluation.py: ca_depth_loss: 33.243050
+loss_evaluation.py: quantile_loss_max_disparity: 2.375327
+loss_evaluation.py: quantile_loss_min_disparity: 19.812094
+loss_evaluation.py: max_disparity_loss: 46.998852
+loss_evaluation.py: min_disparity_loss: 20.374296
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 125 training loss = 144.332 , time = 0.06 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 9.388764
+loss_evaluation.py: ca_depth_loss: 12.393942
+loss_evaluation.py: quantile_loss_max_disparity: 4.425697
+loss_evaluation.py: quantile_loss_min_disparity: 1.992585
+loss_evaluation.py: max_disparity_loss: 18.570045
+loss_evaluation.py: min_disparity_loss: 16.824594
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 126 training loss = 55.794 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 18.454399
+loss_evaluation.py: ca_depth_loss: 21.145481
+loss_evaluation.py: quantile_loss_max_disparity: 1.957022
+loss_evaluation.py: quantile_loss_min_disparity: 8.916808
+loss_evaluation.py: max_disparity_loss: 34.626701
+loss_evaluation.py: min_disparity_loss: 10.204629
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 127 training loss = 87.392 , time = 0.07 
+
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 71.090958
+loss_evaluation.py: ca_depth_loss: 70.546791
+loss_evaluation.py: quantile_loss_max_disparity: 54.753616
+loss_evaluation.py: quantile_loss_min_disparity: 4.251387
+loss_evaluation.py: max_disparity_loss: 59.631958
+loss_evaluation.py: min_disparity_loss: 82.932251
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 128 training loss = 321.765 , time = 0.07 
+
+train_sceneflow.py: Number of model parameters: 7390142
+loss_evaluation.py: ============== evaluated losses ==================
+loss_evaluation.py: refined_depth_loss: 7.422873
+loss_evaluation.py: ca_depth_loss: 8.756294
+loss_evaluation.py: quantile_loss_max_disparity: 1.070409
+loss_evaluation.py: quantile_loss_min_disparity: 49.402714
+loss_evaluation.py: max_disparity_loss: 2.665532
+loss_evaluation.py: min_disparity_loss: 51.529518
+loss_evaluation.py: ==================================================
+
+train_sceneflow.py: Iter 0 training loss = 106.816 , time = 281.49 
+
