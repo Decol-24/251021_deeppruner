@@ -115,7 +115,7 @@ class DeepPruner(SubModule):
             :max_disparity: Upper bound of disaprity search range.
         """
 
-        device = left_input.get_device()
+        device = left_input.device
         if stage is "pre":
             min_disparity = torch.zeros((left_input.size()[0], 1, left_input.size()[2], left_input.size()[3]),
                                         device=device)
@@ -209,7 +209,7 @@ class DeepPruner(SubModule):
             :max_disparity_features: features from ConfidenceRangePredictor-Max
         """
         # cost-volume bottleneck layers
-        cost_volume = self.dres0(cost_volume) [1,32,14,64,128]
+        cost_volume = self.dres0(cost_volume) #[1,32,14,64,128]
         cost_volume = self.dres1(cost_volume)
 
         min_disparity, min_disparity_features = self.min_disparity_predictor(cost_volume,

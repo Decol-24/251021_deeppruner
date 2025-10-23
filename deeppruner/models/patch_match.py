@@ -45,7 +45,7 @@ class DisparityInitialization(nn.Module):
             :multiplier: 1.0 / number_of_intervals
         """
 
-        device = min_disparity.get_device()
+        device = min_disparity.device
 
         multiplier = 1.0 / number_of_intervals # 12
         range_multiplier = torch.arange(0.0, 1, multiplier, device=device).view(number_of_intervals, 1, 1) #均分0到1，份数为number_of_intervals，用来均分视差
@@ -88,7 +88,7 @@ class Evaluate(nn.Module):
             :disparity_samples: Evaluated disparity sample, one per disparity interval.
             :normalized_disparity_samples: Evaluated normaized disparity sample, one per disparity interval.
         """
-        device = left_input.get_device()
+        device = left_input.device
         left_y_coordinate = torch.arange(0.0, left_input.size()[3], device=device).repeat(
             left_input.size()[2]).view(left_input.size()[2], left_input.size()[3]) #x方向的0-127的数列 [64,128]
 
@@ -242,7 +242,7 @@ class PatchMatch(nn.Module):
             :disparity_samples: For each pixel, this function returns "sample_count" disparity samples.
         """
 
-        device = left_input.get_device()
+        device = left_input.device
         min_disparity = torch.floor(min_disparity)
         max_disparity = torch.ceil(max_disparity) #向上取整
 
