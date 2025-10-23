@@ -5,7 +5,7 @@ from models.deeppruner import DeepPruner
 from dataloader import sceneflow_collector as lt
 from dataloader import sceneflow_loader as DA
 
-def time(Net,train_loader,device,**kwargs):
+def evaluate_time(Net,train_loader,device,**kwargs):
     import time
 
     Net = Net.to(device)
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     #model
     Net = DeepPruner()
 
-    avg_run_time = time(args=args,Net=Net,train_loader=TrainImgLoader,device=args.device)
+    avg_run_time = evaluate_time(args=args,Net=Net,train_loader=TrainImgLoader,device=args.device)
     total_flops,total_params = flops(Net,args.device)
 
     print(avg_run_time)
