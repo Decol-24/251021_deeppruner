@@ -105,7 +105,7 @@ class Evaluate(nn.Module):
 
         right_y_coordinate = left_y_coordinate.expand(
             disparity_samples.size()[1], -1, -1, -1).permute([1, 0, 2, 3]).float() #把y坐标扩展到[1,36,64,128]，每个[64,128]的图都是0-127
-        right_y_coordinate = right_y_coordinate - disparity_samples #得到预测的偏移后坐标
+        right_y_coordinate = right_y_coordinate - disparity_samples #得到根据预测视差偏移后坐标
         right_y_coordinate = torch.clamp(right_y_coordinate, min=0, max=right_input.size()[3] - 1) #去掉超过坐标轴的值 [1,36,64,128]
 
         warped_right_feature_map = torch.gather(right_feature_map,dim=4,
@@ -142,7 +142,8 @@ class Evaluate(nn.Module):
         disparity_sample_strength = torch.softmax(disparity_sample_strength, dim=1) # 在dim=1上求softmax，这个维度对应左中右的结果
         disparity_samples = torch.sum(disparity_samples * disparity_sample_strength, dim=1) #用预测的视差级*匹配积分，也就是软argmax，输出值是在0-48之间的 [1,12,64,128]
         normalized_disparity_samples = torch.sum(normalized_disparity_samples * disparity_sample_strength, dim=1) 
-        #normalized_disparity_samples是随机采样出来的，经过多个维度变化，但是值还是那个。这步处理后值被匹配值修正
+        #normalized_disparity_samples是随机采样出来的，用来记录每个点的预测视差系数（乘上视差级后得到预测视差）
+        #简单来说就是左中右对应当前点，左边点，右边点随机采样出来的预测视差，根据偏移后的左右图进行匹配，匹配积分高的表达更强，根据匹配分修正当前点的预测视差
 
         return normalized_disparity_samples, disparity_samples
 
@@ -181,7 +182,7 @@ class Propagation(nn.Module):
                                                    disparity_samples.size()[2],
                                                    disparity_samples.size()[3]) # 扩展一个维度 [1,1,12,64,128]
 
-        if propagation_type is "horizontal": #是horizontal
+        if propagation_type is "horizontal": #横向传播
             label = torch.arange(0, self.filter_size, device=device).repeat(self.filter_size).view(
                 self.filter_size, 1, 1, 1, self.filter_size) #生成0-3数列，扩展到[3,1,1,1,3]，最后一个维度是0-2
 
@@ -249,8 +250,8 @@ class PatchMatch(nn.Module):
         #                               i.e (disparity_sample - interval_min_disparity) / interval_size
 
         normalized_disparity_samples, min_disp_tensor, multiplier = self.disparity_initialization(
-            min_disparity, max_disparity, sample_count) #返回值分别是 符合01分布的随机初始化值，均分后的视差，每个视差级的倍率
-        #normalized_disparity_samples是随机采样的结果，在后续操作中被不断优化到更适合
+            min_disparity, max_disparity, sample_count) #返回值分别是 符合01分布的随机初始化值，均分后的视差，每个视差级的倍率 
+        #normalized_disparity_samples是随机采样的结果，在后续操作中被不断优化到最适的视差 [1,12,64,128]
         min_disp_tensor = min_disp_tensor.unsqueeze(2).repeat(1, 1, self.propagation_filter_size, 1, 1).view(
             min_disp_tensor.size()[0],
             min_disp_tensor.size()[1] * self.propagation_filter_size, #sample_count * propagation_filter_size
@@ -260,8 +261,8 @@ class PatchMatch(nn.Module):
         for prop_iter in range(iteration_count): # 迭代两次
             normalized_disparity_samples = self.propagation(normalized_disparity_samples, device, propagation_type="horizontal") #横向传播一次
             disparity_samples = normalized_disparity_samples * \
-                (max_disparity - min_disparity) * multiplier + min_disp_tensor #normalized_disparity_samples 乘以一个视差级的偏移+每个视差级的起点，表示预测得到的每个像素的视差
-            #[1,36,64,128]
+                (max_disparity - min_disparity) * multiplier + min_disp_tensor #normalized_disparity_samples 乘以一个视差级的偏移+每个视差级的起点，表示预测的每个像素的视差
+            #[1,36,64,128] 12个视差级*三个过滤器
 
             normalized_disparity_samples, disparity_samples = self.evaluate(left_input,
                                                                             right_input,

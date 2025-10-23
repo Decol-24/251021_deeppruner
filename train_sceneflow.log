@@ -2090,3 +2090,4 @@ loss_evaluation.py: ==================================================
 
 train_sceneflow.py: Iter 0 training loss = 106.816 , time = 281.49 
 
+train_sceneflow.py: Number of model parameters: 7390142
