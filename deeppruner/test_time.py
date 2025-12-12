@@ -5,14 +5,12 @@ from models.deeppruner import DeepPruner
 from dataloader import sceneflow_collector as lt
 from dataloader import sceneflow_loader as DA
 
-def evaluate_time(Net,train_loader,device,**kwargs):
+def evaluate_time(Net,imgL,imgR,device,**kwargs):
     import time
 
     Net = Net.to(device)
-
-    for batch_idx, (imgL, imgR, disp_true) in enumerate(train_loader):
-        imgL, imgR = imgL.to(device), imgR.to(device)
-        break
+    imgL = imgL.to(device)
+    imgR = imgR.to(device)
 
     for i in range(10):
         preds = Net(imgL, imgR)
@@ -47,12 +45,12 @@ def step_time(args,Net,train_loader,val_loader,**kwargs):
 
     print(Net.t.all_avg_time_str(30))
 
-def flops(Net,device):
+def evaluate_flops(Net,input,device,**kwargs):
     Net = Net.to(device)
-    input = torch.randn(1,3,256,512).to(device)
+    # input = input.to(device)
 
     from fvcore.nn import FlopCountAnalysis
-    flops = FlopCountAnalysis(Net, (input, input))   # FLOPs（乘加=2）
+    flops = FlopCountAnalysis(Net,input)   # FLOPs（乘加=2）
     total_flops = flops.total()
 
     total_params = sum(p.numel() for p in Net.parameters())
@@ -83,27 +81,19 @@ if __name__ == '__main__':
     parser.add_argument('--device', default='cpu', type=str)
 
     args = parser.parse_args()
-    args.cuda = not args.no_cuda and torch.cuda.is_available()
 
     args.cost_aggregator_scale = config_args.cost_aggregator_scale
     args.maxdisp = config_args.max_disp
 
-    #Dataset
-    all_left_img, all_right_img, all_left_disp, test_left_img, test_right_img, test_left_disp = lt.dataloader(args.datapath,)
-
-    TrainImgLoader = torch.utils.data.DataLoader(
-        DA.SceneflowLoader(all_left_img, all_right_img, all_left_disp, args.cost_aggregator_scale*8.0, True),
-        batch_size=1, shuffle=True, num_workers=8, drop_last=False)
-
-    TestImgLoader = torch.utils.data.DataLoader(
-        DA.SceneflowLoader(test_left_img, test_right_img, test_left_disp, args.cost_aggregator_scale*8.0, False),
-        batch_size=1, shuffle=False, num_workers=4, drop_last=False)
-
     #model
     Net = DeepPruner()
 
-    avg_run_time = evaluate_time(args=args,Net=Net,train_loader=TrainImgLoader,device=args.device)
-    total_flops,total_params = flops(Net,args.device)
+    Net = Net.to(args.device)
+    imgL = torch.randn(1,3,544,960).to(args.device)
+    imgR = torch.randn(1,3,544,960).to(args.device)
+
+    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device)
+    total_flops,total_params = evaluate_flops(Net,input=(imgL,imgL),device=args.device)
 
     print(avg_run_time)
     print(f"\nFLOPs: {total_flops/1e9:.2f} GFLOPs, parameters: {total_params / 1e6:.2f} M")
