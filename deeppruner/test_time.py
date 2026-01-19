@@ -2,29 +2,33 @@ import torch
 import argparse
 from models.config import config as config_args
 from models.deeppruner import DeepPruner
-from dataloader import sceneflow_collector as lt
-from dataloader import sceneflow_loader as DA
 
 @torch.no_grad()
-def evaluate_time(Net,imgL,imgR,device,**kwargs):
-    import time
-
-    Net = Net.to(device)
+def evaluate_time(Net, imgL, imgR, device, warmup=30, times=50):
+    Net = Net.to(device).eval()
     imgL = imgL.to(device)
     imgR = imgR.to(device)
 
-    for i in range(10):
-        preds = Net(imgL, imgR)
+    # warmup
+    for _ in range(warmup):
+        with torch.amp.autocast('cuda', enabled=True):
+            _ = Net(imgL, imgR)
+    torch.cuda.synchronize()
 
-    times = 30
-    start = time.perf_counter()
-    for i in range(times):
-        preds = Net(imgL, imgR)
-    end = time.perf_counter()
+    starter = torch.cuda.Event(enable_timing=True)
+    ender   = torch.cuda.Event(enable_timing=True)
 
-    avg_run_time = (end - start) / times
+    total_ms = 0.0
+    for _ in range(times):
+        starter.record()
+        with torch.amp.autocast('cuda', enabled=True):
+            _ = Net(imgL, imgR)
+        ender.record()
+        torch.cuda.synchronize()
+        total_ms += starter.elapsed_time(ender)
 
-    return avg_run_time
+    avg_s = (total_ms / times) / 1000.0
+    return avg_s
 
 @torch.no_grad()
 def evaluate_flops(Net,input,device,**kwargs):
