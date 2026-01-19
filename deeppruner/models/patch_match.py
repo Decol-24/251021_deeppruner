@@ -99,15 +99,15 @@ class Evaluate(nn.Module):
         left_feature_map = left_input.expand(disparity_samples.size()[1], -1, -1, -1, -1).permute([1, 2, 0, 3, 4])
 
         disparity_sample_strength = disparity_samples.new(disparity_samples.size()[0],
-                                                          disparity_samples.size()[1],
-                                                          disparity_samples.size()[2],
-                                                          disparity_samples.size()[3]) # 创建一个和disparity_samples同shape的tensor [1,36,64,128]
+                                                        disparity_samples.size()[1],
+                                                        disparity_samples.size()[2],
+                                                        disparity_samples.size()[3]) # 创建一个和disparity_samples同shape的tensor [1,36,64,128]
 
         right_y_coordinate = left_y_coordinate.expand(
             disparity_samples.size()[1], -1, -1, -1).permute([1, 0, 2, 3]).float() #把y坐标扩展到[1,36,64,128]，每个[64,128]的图都是0-127
         right_y_coordinate = right_y_coordinate - disparity_samples #得到根据预测视差偏移后坐标
         right_y_coordinate = torch.clamp(right_y_coordinate, min=0, max=right_input.size()[3] - 1) #去掉超过坐标轴的值 [1,36,64,128]
-
+        
         warped_right_feature_map = torch.gather(right_feature_map,dim=4,
                                                 index=right_y_coordinate.expand(right_input.size()[1], -1, -1, -1, -1).permute([1, 0, 2, 3, 4]).long()) 
         #对坐标扩张后取样，得到偏移后的右图[1,32,36,64,128]，多一个通道维度
@@ -123,10 +123,10 @@ class Evaluate(nn.Module):
             disparity_sample_strength.size()[3]) #拆成[1,12,3,64,128]
 
         disparity_samples = disparity_samples.view(disparity_samples.size()[0],
-                                                   disparity_samples.size()[1] // (self.filter_size),
-                                                   (self.filter_size),
-                                                   disparity_samples.size()[2],
-                                                   disparity_samples.size()[3]) #拆成[1,12,3,64,128]
+                                                disparity_samples.size()[1] // (self.filter_size),
+                                                (self.filter_size),
+                                                disparity_samples.size()[2],
+                                                disparity_samples.size()[3]) #拆成[1,12,3,64,128]
 
         normalized_disparity_samples = normalized_disparity_samples.view(
             normalized_disparity_samples.size()[0],

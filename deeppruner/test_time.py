@@ -78,7 +78,7 @@ if __name__ == '__main__':
     imgL = torch.randn(1,3,544,960).to(args.device)
     imgR = torch.randn(1,3,544,960).to(args.device)
 
-    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device)
+    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device,times=1)
     total_flops,total_params = evaluate_flops(Net,input=(imgL,imgL),device=args.device)
 
     print(avg_run_time)

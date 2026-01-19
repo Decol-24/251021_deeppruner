@@ -158,8 +158,9 @@ class DeepPruner(SubModule):
             :disparity_samples:
         """
         if sampler_type is "patch_match":
+
             disparity_samples = self.patch_match(left_input, right_input, min_disparity, #论文中提到的patchmatch处理
-                                                 max_disparity, sample_count, self.patch_match_iteration_count)
+                                                max_disparity, sample_count, self.patch_match_iteration_count)
         else:
             disparity_samples = self.uniform_sampler(min_disparity, max_disparity, sample_count)
 
@@ -247,14 +248,16 @@ class DeepPruner(SubModule):
             :min_disparity: DeepPruner disparity by Confidence Range Predictor (Min)
 
         """
+        #不关闭amp会导致index中有Nan
+        with torch.amp.autocast('cuda', enabled=False):
+            if self.scale == 8:
+                left_spp_features, left_low_level_features, left_low_level_features_1 = self.feature_extraction(left_input) # left_spp_features [1,32,64,128]
+                right_spp_features, right_low_level_features, _ = self.feature_extraction(right_input)
+            else:
+                left_spp_features, left_low_level_features = self.feature_extraction(left_input) #left_low_level_features 是这个块的第一个层的输出
+                right_spp_features, right_low_level_features = self.feature_extraction(right_input)
 
-        if self.scale == 8:
-            left_spp_features, left_low_level_features, left_low_level_features_1 = self.feature_extraction(left_input) # left_spp_features [1,32,64,128]
-            right_spp_features, right_low_level_features, _ = self.feature_extraction(right_input)
-        else:
-            left_spp_features, left_low_level_features = self.feature_extraction(left_input) #left_low_level_features 是这个块的第一个层的输出
-            right_spp_features, right_low_level_features = self.feature_extraction(right_input)
-
+            
         min_disparity, max_disparity = self.generate_search_range(
             left_spp_features,
             sample_count=self.patch_match_sample_count, stage="pre") #pre 阶段只做初始化 min_disparity都是0，max_disparity都是48， [1,1,64,128]
@@ -265,8 +268,8 @@ class DeepPruner(SubModule):
             sample_count=self.patch_match_sample_count, sampler_type="patch_match")
 
         cost_volume, disparity_samples, _ = self.cost_volume_generator(left_spp_features,
-                                                                       right_spp_features,
-                                                                       disparity_samples)
+                                                                    right_spp_features,
+                                                                    disparity_samples)
 
         min_disparity, max_disparity, min_disparity_features, max_disparity_features = \
             self.confidence_range_predictor(cost_volume, disparity_samples)
@@ -316,11 +319,11 @@ class DeepPruner(SubModule):
             return refined_disparity.squeeze(1)
 
         min_disparity = F.interpolate(min_disparity * self.scale, scale_factor=(self.scale, self.scale),
-                                      mode='bilinear').squeeze(1)
+                                    mode='bilinear').squeeze(1)
         max_disparity = F.interpolate(max_disparity * self.scale, scale_factor=(self.scale, self.scale),
-                                      mode='bilinear').squeeze(1)
+                                    mode='bilinear').squeeze(1)
         ca_disparity = F.interpolate(ca_disparity * (self.scale // 2),
-                                     scale_factor=((self.scale // 2), (self.scale // 2)), mode='bilinear').squeeze(1)
+                                    scale_factor=((self.scale // 2), (self.scale // 2)), mode='bilinear').squeeze(1)
 
         if self.scale == 8:
             refined_disparity = F.interpolate(refined_disparity * 2, scale_factor=(2, 2), mode='bilinear').squeeze(1)
