@@ -80,7 +80,7 @@ class SceneflowLoader(data.Dataset):
             w, h = left_img.size
 
             dw = w + (self.downsample_scale - (w%self.downsample_scale + (w%self.downsample_scale==0)*self.downsample_scale)) 
-            #把图像宽度 w 补成 32 的倍数
+            #把图像宽度 w 向上取整到 downsample_scale 的整数倍
             dh = h + (self.downsample_scale - (h%self.downsample_scale + (h%self.downsample_scale==0)*self.downsample_scale))
 
             left_img = left_img.crop((w - dw, h - dh, w, h))

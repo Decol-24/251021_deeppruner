@@ -110,8 +110,8 @@ class MinDisparityPredictor(HourGlass):
             :disparity_output: Min Disparity of the reduced disaprity search range.
             :feature_output:   High-level features of the MaxDisparityPredictor
         """
-
-        output0 = self.conv1(input)
+        #[1, 16, 14, 68, 120]
+        output0 = self.conv1(input) #[1, 64, 14, 34, 60]
         output0_a = self.conv2(output0) + output0
 
         output0 = self.conv1_1(output0_a)
