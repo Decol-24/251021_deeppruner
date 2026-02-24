@@ -69,13 +69,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #model
-    # from models.config import config as arg
-    from models.config import config_fast as arg
+    from models.config import config as arg
+    # from models.config import config_fast as arg
     Net = DeepPruner(arg)
 
     Net = Net.to(args.device)
-    imgL = torch.randn(1,3,576,960).to(args.device) #fast需要w为64的倍数
-    imgR = torch.randn(1,3,576,960).to(args.device)
+    imgL = torch.randn(1,3,544,960).to(args.device) #fast需要w为64的倍数576 best需要为32的倍数544
+    imgR = torch.randn(1,3,544,960).to(args.device)
 
     avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device)
     total_flops,total_params = evaluate_flops(Net,input=(imgL,imgL),device=args.device)
