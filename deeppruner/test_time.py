@@ -1,6 +1,7 @@
 import torch
 import argparse
 from models.deeppruner import DeepPruner
+from amp_setting import set_amp,get_amp
 
 
 @torch.no_grad()
@@ -80,16 +81,18 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     amp = False
+    set_amp(amp)
+
     #model
     # from models.config import config as arg
     from models.config import config_fast as arg #在这里切换fast！！
     Net = DeepPruner(arg)
 
     Net = Net.to(args.device)
-    imgL = torch.randn(1,3,544,960).to(args.device) #fast需要w为64的倍数576 best需要为32的倍数544
-    imgR = torch.randn(1,3,544,960).to(args.device)
+    imgL = torch.randn(1,3,576,960).to(args.device) #fast需要w为64的倍数576 best需要为32的倍数544
+    imgR = torch.randn(1,3,576,960).to(args.device)
 
-    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device,amp=amp)
+    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device,amp=get_amp())
     total_flops,total_params = evaluate_flops(Net,input=(imgL,imgL),device=args.device)
 
     print(avg_run_time)

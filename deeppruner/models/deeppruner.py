@@ -22,6 +22,7 @@ from models.patch_match import PatchMatch
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from amp_setting import get_amp
 
 
 class DeepPruner(SubModule):
@@ -248,8 +249,35 @@ class DeepPruner(SubModule):
             :min_disparity: DeepPruner disparity by Confidence Range Predictor (Min)
 
         """
-        #不关闭amp会导致index中有Nan
-        with torch.amp.autocast('cuda', enabled=False):
+        if get_amp():
+            #不关闭amp会导致index中有Nan
+            with torch.amp.autocast('cuda', enabled=False):
+                if self.scale == 8:
+                    left_spp_features, left_low_level_features, left_low_level_features_1 = self.feature_extraction(left_input) # left_spp_features [1,32,64,128]
+                    right_spp_features, right_low_level_features, _ = self.feature_extraction(right_input)
+                else:
+                    left_spp_features, left_low_level_features = self.feature_extraction(left_input) #left_low_level_features 是这个块的第一个层的输出
+                    right_spp_features, right_low_level_features = self.feature_extraction(right_input)
+                #best: left_spp_features.shape [1, 32, 136, 240] right_spp_features.shape [1, 32, 136, 240]
+                #fast: left_spp_features.shape [1, 32, 68, 120] right_spp_features.shape [1, 32, 68, 120]
+                
+                min_disparity, max_disparity = self.generate_search_range(
+                    left_spp_features,
+                    sample_count=self.patch_match_sample_count, stage="pre") #pre 阶段只做初始化 min_disparity都是0，max_disparity都是48， [1,1,64,128]
+
+                disparity_samples = self.generate_disparity_samples(
+                    left_spp_features,
+                    right_spp_features, min_disparity, max_disparity,
+                    sample_count=self.patch_match_sample_count, sampler_type="patch_match")
+
+                cost_volume, disparity_samples, _ = self.cost_volume_generator(left_spp_features,
+                                                                            right_spp_features,
+                                                                            disparity_samples)
+
+                min_disparity, max_disparity, min_disparity_features, max_disparity_features = \
+                    self.confidence_range_predictor(cost_volume, disparity_samples)
+                
+        else:
             if self.scale == 8:
                 left_spp_features, left_low_level_features, left_low_level_features_1 = self.feature_extraction(left_input) # left_spp_features [1,32,64,128]
                 right_spp_features, right_low_level_features, _ = self.feature_extraction(right_input)
@@ -274,6 +302,7 @@ class DeepPruner(SubModule):
 
             min_disparity, max_disparity, min_disparity_features, max_disparity_features = \
                 self.confidence_range_predictor(cost_volume, disparity_samples)
+            
 
         stretched_min_disparity, stretched_max_disparity = self.generate_search_range(
             left_spp_features,
