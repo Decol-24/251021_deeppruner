@@ -4,14 +4,18 @@ from models.deeppruner import DeepPruner
 
 
 @torch.no_grad()
-def evaluate_time(Net, imgL, imgR, device, warmup=30, times=50):
+def evaluate_time(Net, imgL, imgR, device, warmup=30, times=50, amp=False):
     Net = Net.to(device).eval()
     imgL = imgL.to(device)
     imgR = imgR.to(device)
 
     # warmup
-    for _ in range(warmup):
-        with torch.amp.autocast('cuda', enabled=True):
+    if amp:
+        for _ in range(warmup):
+            with torch.amp.autocast('cuda', enabled=True):
+                _ = Net(imgL, imgR)
+    else:
+        for _ in range(warmup):
             _ = Net(imgL, imgR)
     torch.cuda.synchronize()
 
@@ -19,13 +23,21 @@ def evaluate_time(Net, imgL, imgR, device, warmup=30, times=50):
     ender   = torch.cuda.Event(enable_timing=True)
 
     total_ms = 0.0
-    for _ in range(times):
-        starter.record()
-        with torch.amp.autocast('cuda', enabled=True):
+    if amp:
+        for _ in range(times):
+            starter.record()
+            with torch.amp.autocast('cuda', enabled=True):
+                _ = Net(imgL, imgR)
+            ender.record()
+            torch.cuda.synchronize()
+            total_ms += starter.elapsed_time(ender)
+    else:
+        for _ in range(times):
+            starter.record()
             _ = Net(imgL, imgR)
-        ender.record()
-        torch.cuda.synchronize()
-        total_ms += starter.elapsed_time(ender)
+            ender.record()
+            torch.cuda.synchronize()
+            total_ms += starter.elapsed_time(ender)
 
     avg_s = (total_ms / times) / 1000.0
     return avg_s
@@ -67,17 +79,17 @@ if __name__ == '__main__':
     parser.add_argument('--device', default='cuda', type=str)
 
     args = parser.parse_args()
-
+    amp = False
     #model
     # from models.config import config as arg
-    from models.config import config_fast as arg
+    from models.config import config_fast as arg #在这里切换fast！！
     Net = DeepPruner(arg)
 
     Net = Net.to(args.device)
     imgL = torch.randn(1,3,576,960).to(args.device) #fast需要w为64的倍数
     imgR = torch.randn(1,3,576,960).to(args.device)
 
-    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device)
+    avg_run_time = evaluate_time(Net=Net,imgL=imgL,imgR=imgR,device=args.device,amp=amp)
     total_flops,total_params = evaluate_flops(Net,input=(imgL,imgL),device=args.device)
 
     print(avg_run_time)
